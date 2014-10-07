@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem1_School", "Problem1_School\Problem1_School.csproj", "{54E6DA22-4764-434A-AAF1-CBF77F82CB3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem1_School", "..\..\..\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem1_School\Problem1_School.csproj", "{54E6DA22-4764-434A-AAF1-CBF77F82CB3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem2_HumanStudentAndWorker", "Problem2_HumanStudentAndWorker\Problem2_HumanStudentAndWorker.csproj", "{312E257E-CD2C-41F7-8CCF-5D2F84FAF75D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem2_HumanStudentAndWorker", "..\..\..\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem2_HumanStudentAndWorker\Problem2_HumanStudentAndWorker.csproj", "{312E257E-CD2C-41F7-8CCF-5D2F84FAF75D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

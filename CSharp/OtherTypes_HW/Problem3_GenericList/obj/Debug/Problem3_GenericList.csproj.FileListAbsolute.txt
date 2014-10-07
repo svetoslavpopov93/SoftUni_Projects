@@ -1,0 +1,6 @@
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\Problem3_GenericList\bin\Debug\Problem3_GenericList.exe.config
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\Problem3_GenericList\bin\Debug\Problem3_GenericList.exe
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\Problem3_GenericList\bin\Debug\Problem3_GenericList.pdb
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\Problem3_GenericList\obj\Debug\Problem3_GenericList.csprojResolveAssemblyReference.cache
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\Problem3_GenericList\obj\Debug\Problem3_GenericList.exe
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\Problem3_GenericList\obj\Debug\Problem3_GenericList.pdb

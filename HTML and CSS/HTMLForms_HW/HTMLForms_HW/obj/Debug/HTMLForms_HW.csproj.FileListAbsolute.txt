@@ -1,0 +1,5 @@
+c:\users\svetoslav\documents\visual studio 2012\Projects\HTMLForms_HW\HTMLForms_HW\bin\HTMLForms_HW.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\HTMLForms_HW\HTMLForms_HW\bin\HTMLForms_HW.pdb
+c:\users\svetoslav\documents\visual studio 2012\Projects\HTMLForms_HW\HTMLForms_HW\obj\Debug\HTMLForms_HW.csprojResolveAssemblyReference.cache
+c:\users\svetoslav\documents\visual studio 2012\Projects\HTMLForms_HW\HTMLForms_HW\obj\Debug\HTMLForms_HW.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\HTMLForms_HW\HTMLForms_HW\obj\Debug\HTMLForms_HW.pdb

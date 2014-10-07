@@ -1,0 +1,5 @@
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSPresentationRules_HW\CSSPresentationRules_HW\bin\CSSPresentationRules_HW.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSPresentationRules_HW\CSSPresentationRules_HW\bin\CSSPresentationRules_HW.pdb
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSPresentationRules_HW\CSSPresentationRules_HW\obj\Debug\CSSPresentationRules_HW.csprojResolveAssemblyReference.cache
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSPresentationRules_HW\CSSPresentationRules_HW\obj\Debug\CSSPresentationRules_HW.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSPresentationRules_HW\CSSPresentationRules_HW\obj\Debug\CSSPresentationRules_HW.pdb

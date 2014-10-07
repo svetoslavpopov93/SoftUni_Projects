@@ -1,0 +1,5 @@
+E:\Coding\Visual Studio 2012\Projects\ExceptionHandling_HW\Problem2_EnterNumbers\bin\Debug\Problem2_EnterNumbers.exe.config
+E:\Coding\Visual Studio 2012\Projects\ExceptionHandling_HW\Problem2_EnterNumbers\bin\Debug\Problem2_EnterNumbers.exe
+E:\Coding\Visual Studio 2012\Projects\ExceptionHandling_HW\Problem2_EnterNumbers\bin\Debug\Problem2_EnterNumbers.pdb
+E:\Coding\Visual Studio 2012\Projects\ExceptionHandling_HW\Problem2_EnterNumbers\obj\Debug\Problem2_EnterNumbers.exe
+E:\Coding\Visual Studio 2012\Projects\ExceptionHandling_HW\Problem2_EnterNumbers\obj\Debug\Problem2_EnterNumbers.pdb

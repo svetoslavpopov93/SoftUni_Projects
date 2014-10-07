@@ -1,0 +1,5 @@
+c:\users\svetoslav\documents\visual studio 2012\Projects\WebFundamentials_Exam\WebFundamentials_Exam\bin\WebFundamentials_Exam.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\WebFundamentials_Exam\WebFundamentials_Exam\bin\WebFundamentials_Exam.pdb
+c:\users\svetoslav\documents\visual studio 2012\Projects\WebFundamentials_Exam\WebFundamentials_Exam\obj\Debug\WebFundamentials_Exam.csprojResolveAssemblyReference.cache
+c:\users\svetoslav\documents\visual studio 2012\Projects\WebFundamentials_Exam\WebFundamentials_Exam\obj\Debug\WebFundamentials_Exam.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\WebFundamentials_Exam\WebFundamentials_Exam\obj\Debug\WebFundamentials_Exam.pdb

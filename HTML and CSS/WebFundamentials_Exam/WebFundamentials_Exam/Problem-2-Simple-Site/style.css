@@ -1,0 +1,185 @@
+﻿body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Patua One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Patua One'), local('PatuaOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/patuaone/v4/yAXhog6uK3bd3OwBILv_SD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+#wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+    #wrapper header {
+        width: 564px;
+        margin: 20px auto;
+    }
+
+        #wrapper header div {
+            text-align: center;
+        }
+
+            #wrapper header div img {
+                float: left;
+                margin-left: 95px;
+            }
+
+            #wrapper header div h1 {
+                display: inline-block;
+                font-family: Patua One;
+                font-size: 45px;
+                margin: 0;
+                color: #444444;
+                margin-top: 7px;
+                float: left;
+            }
+
+                #wrapper header div h1 a {
+                    text-decoration: none;
+                    color: #444444;
+                }
+
+                #wrapper header div h1 a:hover {
+                    color: #777777;
+                }
+
+            #wrapper header div h4 {
+                clear: both;
+                font-size: 12px;
+                font-style: italic;
+                font-family: Georgia;
+                color: #666666;
+            }
+
+        #wrapper header nav ul {
+            list-style-type: none;
+            margin: 0;
+            margin-left: 34px;
+            padding: 10px 0 10px 40px;
+            border-top: 1px dashed #AAAAAA;
+            border-bottom: 1px dashed #AAAAAA;
+        }
+
+            #wrapper header nav ul li:first-child a {
+                background: #EEEEEE;
+            }
+
+            #wrapper header nav ul li {
+                display: inline-block;
+            }
+
+                #wrapper header nav ul li a {
+                    text-decoration: none;
+                    color: #999999;
+                    font-family: Arial;
+                    font-weight: bold;
+                    font-size: 15px;
+                    padding: 5px 10px 5px 10px;
+                    border-radius: 5px;
+                }
+
+                    #wrapper header nav ul li a:hover {
+                        color: black;
+                    }
+
+    #wrapper #cover {
+        margin-top: 30px;
+    }
+
+    #wrapper aside {
+        float: right;
+        width: 250px;
+        background: #F9F9F9;
+        border: 1px dashed #AAAAAA;
+        margin-top: 15px;
+    }
+
+        #wrapper aside input:first-child {
+            margin-left: 24px;
+            margin-top: 30px;
+        }
+
+        #wrapper aside input[type="button"] {
+            font-family: Arial;
+        }
+
+        #wrapper aside span {
+            font-family: Georgia;
+            font-weight: bold;
+            color: #666666;
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 23px;
+            margin-bottom: 6px;
+        }
+
+        #wrapper aside ul {
+            list-style-type: none;
+            margin-top: 0;
+            padding-left: 25px;
+            margin-bottom: 35px;
+        }
+
+            #wrapper aside ul li a {
+                color: #007CD8;
+                text-decoration: none;
+            }
+
+                #wrapper aside ul li a:hover {
+                    color: red;
+                    text-decoration: underline;
+                }
+
+    #wrapper section {
+        display: inline-block;
+        float: left;
+        width: 660px;
+    }
+
+        #wrapper section div {
+            width: 86%;
+            margin: 35px auto;
+            border-top: 1px dashed #AAAAAA;
+            border-bottom: 1px dashed #AAAAAA;
+        }
+
+            #wrapper section div h2 {
+                text-align: center;
+                font-weight: normal;
+                color: #666666;
+            }
+
+            #wrapper section div p {
+                color: #666666;
+                width: 90%;
+                margin-left: 10%;
+                margin: 16px auto;
+            }
+
+        #wrapper section article {
+            margin-top: 45px;
+        }
+
+            #wrapper section article h3 {
+                font-size: 29px;
+                font-family: Georgia;
+                font-weight: lighter;
+            }
+
+            #wrapper section article p {
+                font-size: 18px;
+            }
+
+footer {
+    clear: both;
+    background: #EEEEEE;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: #666666;
+    font-family: Georgia;
+}

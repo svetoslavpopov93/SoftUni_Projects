@@ -1,0 +1,6 @@
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\Problem2_LaptopShop\bin\Debug\Problem2_LaptopShop.exe.config
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\Problem2_LaptopShop\bin\Debug\Problem2_LaptopShop.exe
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\Problem2_LaptopShop\bin\Debug\Problem2_LaptopShop.pdb
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\Problem2_LaptopShop\obj\Debug\Problem2_LaptopShop.exe
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\Problem2_LaptopShop\obj\Debug\Problem2_LaptopShop.pdb
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\Problem2_LaptopShop\obj\Debug\Problem2_LaptopShop.csprojResolveAssemblyReference.cache

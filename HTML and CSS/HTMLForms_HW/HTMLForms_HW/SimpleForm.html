@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #content {
+            width: 900px;
+            height: 500px;
+            background-color: #EEEEEE;
+            color: #1F4062;
+            font-family: Calibri;
+        }
+
+        form {
+            display: inline-block;
+        }
+
+        #content h1 {
+            font-weight: bolder;
+        }
+
+        .btn {
+            border: 1px solid #214264;
+            display: inline-block;
+            height: 35px;
+            width: 45%;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            margin-left: 52%;
+        }
+
+            .btn p {
+                margin: 0;
+                padding: 0;
+                margin-top: 6px;
+                text-align: center;
+                font-family: Calibri;
+                text-decoration: none;
+                color: #214264;
+            }
+
+        .input {
+            display: inline-block;
+            width: 90%;
+            margin-left: 7%;
+            height: 35px;
+            margin-bottom: 13px;
+        }
+
+        h2 {
+            margin-left: 7%;
+            margin-bottom: 6px;
+        }
+
+        #register_link {
+            text-decoration: none;
+            color: #234465;
+        }
+
+        #register {
+            width: 49%;
+            display: inline-block;
+            float: left;
+            color: #606060;
+        }
+
+        #login {
+            color: #FFFFFF;
+            width: 49%;
+            height: 310px;
+            display: inline-block;
+            background-color: #234465;
+        }
+
+        #rememberMe {
+            margin-left: 32px;
+        }
+
+        #login_btn {
+            margin-left: 75px;
+            border: 2px solid #FD9B01;
+        }
+
+            #login_btn p {
+                color: #FFFFFF;
+            }
+
+        #forgot {
+            color: white;
+            font-weight: bold;
+            margin-left: 280px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Enter the system</h1>
+        <p>It is necessary to login in Your account in order to sign in for a course.</p>
+
+        <div>
+            <form id="register">
+                <h2>ARE YOU NEW?<a href="" id="register_link">REGISTER</a></h2>
+                <input type="text" class="input" placeholder="User name" />
+                <input type="text" class="input" placeholder="Email" />
+                <input type="password" class="input" placeholder="Password" />
+                <input type="password" class="input" placeholder="Confirm Password" />
+                <a href="" class="btn">
+                    <p>Register</p>
+                </a>
+            </form>
+
+            <form id="login">
+                <h2>ALREADY A STUDENT? LOGIN</h2>
+                <input type="text" class="input" placeholder="User name" />
+                <input type="password" class="input" placeholder="Password" />
+                <input type="checkbox" id="rememberMe" />
+                <label for="rememberMe">Remember me?</label>
+                <a href="" class="btn" id="login_btn">
+                    <p>Login</p>
+                </a>
+                <a href="" id="forgot">Forgot password</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

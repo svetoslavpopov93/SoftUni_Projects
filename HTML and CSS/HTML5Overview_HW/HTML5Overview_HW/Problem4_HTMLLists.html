@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HTML Lists</title>
+    <style>
+        body {
+            font-family: Consolas;
+            font-weight: bold;
+        }
+
+
+        ol.mainList {
+            list-style-type: upper-roman;
+            margin-left: 20px;
+        }
+
+        mainLi {
+            padding-left: 20px;
+        }
+
+        ol.nested2 {
+            list-style-type: lower-alpha;
+        }
+
+        ul.firstNested {
+            list-style-type: circle;
+        }
+
+        ul.secondNested {
+            list-style-type: square;
+        }
+
+        ul.listItem3 {
+            list-style-type: disc;
+        }
+    </style>
+</head>
+<body>
+    <p>Preceding Text</p>
+    <ol class="mainList">
+        <li class="mainLi">
+            <p>List Item 1</p>
+            <ol class="list1">
+                <li>Nested Item 1.1</li>
+                <li>Nested Item 1.2</li>
+            </ol>
+        </li>
+        <li class="mainLi">
+            <p>List Item 2</p>
+            <ol class="nested2">
+                <li>
+                    <p>Nested Item 2.1</p>
+                </li>
+                <li>
+                    <p>Nested Item 2.2</p>
+                    <ul class="firstNested">
+                        <li>
+                            <p>Nested Item 2.2.1</p>
+                        </li>
+                        <li>
+                            <p>Nested Item 2.2.2</p>
+                            <ul class="secondNested">
+                                <li>
+                                    <p>Nested Item 2.2.2.1</p>
+                                </li>
+                                <li>
+                                    <p>Nested Item 2.2.2.2</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>Nested Item 2.2.3</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Nested Item 2.3</p>
+                </li>
+            </ol>
+        </li>
+        <li class="mainLi">
+            <p>List Item 3</p>
+            <ul class="listItem3">
+                <li>
+                    <p>Nested Item 3.1</p>
+                </li>
+                <li>
+                    <p>Nested Item 3.2</p>
+                </li>
+                <li>
+                    <p>Nested Item 3.3</p>
+                </li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>

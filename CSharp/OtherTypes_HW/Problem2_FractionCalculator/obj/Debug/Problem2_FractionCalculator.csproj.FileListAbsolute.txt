@@ -1,0 +1,6 @@
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\Problem2_FractionCalculator\obj\Debug\Problem2_FractionCalculator.csprojResolveAssemblyReference.cache
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\Problem2_FractionCalculator\bin\Debug\Problem2_FractionCalculator.exe.config
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\Problem2_FractionCalculator\bin\Debug\Problem2_FractionCalculator.exe
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\Problem2_FractionCalculator\bin\Debug\Problem2_FractionCalculator.pdb
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\Problem2_FractionCalculator\obj\Debug\Problem2_FractionCalculator.exe
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\Problem2_FractionCalculator\obj\Debug\Problem2_FractionCalculator.pdb

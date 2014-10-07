@@ -1,0 +1,141 @@
+﻿body {
+    font-family: Arial;
+    font-size: 18px;
+    background-color: #F7F7F7;
+}
+
+hr {
+    border: 1px dashed #CCCCCC;
+}
+
+#username {
+    background-image: url(username-icon.png);
+    background-repeat: no-repeat;
+    text-indent: 25px;
+    background-position-x: left;
+    background-position-y: center;
+}
+
+#password {
+    background-image: url(password-icon.png);
+    background-repeat: no-repeat;
+    text-indent: 25px;
+    background-position-x: left;
+    background-position-y: center;
+}
+
+.arrow {
+    background-image: url(field-icon.png);
+    background-repeat: no-repeat;
+    text-indent: 25px;
+    background-position-x: left;
+    background-position-y: center;
+}
+
+#wrapper h1 {
+    margin-left: 75px;
+    font-weight: normal;
+    margin-bottom: 14px;
+}
+
+#wrapper section {
+    display: inline-block;
+    width: 62%;
+    margin-left: 75px;
+    float: left;
+}
+
+    #wrapper section form {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+        #wrapper section form fieldset {
+            border: 1px dashed #CCCCCC;
+        }
+
+            #wrapper section form fieldset legend {
+                background: #666666;
+                color: white;
+                border: 1px solid black;
+                padding: 8px 5px 8px 5px;
+                font-weight: bold;
+            }
+
+#wrapper aside {
+    display: inline-block;
+    float: right;
+    width: 23%;
+    margin-right: 75px;
+    background: #FFFFFF;
+    padding: 15px 15px 15px 23px;
+    margin-top: 40px;
+    border: 2px solid #CCCCCC;
+}
+
+.left {
+    display: inline-block;
+    float: left;
+}
+
+    .left label {
+        display: block;
+        color: #8E7F7D;
+        vertical-align: middle;
+        height: 33px;
+        width: 160px;
+        background: #CCCCCC;
+        margin-bottom: 3px;
+        padding: 0;
+        padding-top: 9px;
+        text-align: left;
+    }
+
+}
+
+.right {
+    display: inline-block;
+    float: left;
+}
+
+    .right input {
+        display: block;
+        height: 32px;
+        width: 585px;
+        margin-bottom: 3px;
+        border: 4px solid #E6E6E6;
+        border-right: 35px solid #E6E6E6;
+        margin-left: 165px;
+    }
+
+        .right input:active {
+        background: #F7F5D2;
+             }
+
+.submit {
+    clear: both;
+    display: block;
+    width: 300px;
+    height: 49px;
+    background: white;
+    border: 1px solid #CCCCCC;
+    border-top: 2px solid #CCCCCC;
+    float: right;
+}
+
+    .submit input {
+        width: 90px;
+        height: 32px;
+        border: none;
+        border-bottom: 1px solid #CCCCCC;
+        border-right: 1px solid #CCCCCC;
+        float: right;
+        font-size: 17px;
+        margin-right: 40px;
+        margin-top: 8px;
+        color: #8E7F7D;
+    }
+
+        .submit input:hover {
+            color: black;
+        }

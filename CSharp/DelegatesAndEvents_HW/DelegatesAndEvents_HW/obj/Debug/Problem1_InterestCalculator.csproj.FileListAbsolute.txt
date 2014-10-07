@@ -1,0 +1,6 @@
+D:\Coding\Visual Studio 2012\Projects\DelegatesAndEvents_HW\DelegatesAndEvents_HW\obj\Debug\Problem1_InterestCalculator.csprojResolveAssemblyReference.cache
+D:\Coding\Visual Studio 2012\Projects\DelegatesAndEvents_HW\DelegatesAndEvents_HW\bin\Debug\DelegatesAndEvents_HW.exe.config
+D:\Coding\Visual Studio 2012\Projects\DelegatesAndEvents_HW\DelegatesAndEvents_HW\bin\Debug\DelegatesAndEvents_HW.exe
+D:\Coding\Visual Studio 2012\Projects\DelegatesAndEvents_HW\DelegatesAndEvents_HW\bin\Debug\DelegatesAndEvents_HW.pdb
+D:\Coding\Visual Studio 2012\Projects\DelegatesAndEvents_HW\DelegatesAndEvents_HW\obj\Debug\DelegatesAndEvents_HW.exe
+D:\Coding\Visual Studio 2012\Projects\DelegatesAndEvents_HW\DelegatesAndEvents_HW\obj\Debug\DelegatesAndEvents_HW.pdb

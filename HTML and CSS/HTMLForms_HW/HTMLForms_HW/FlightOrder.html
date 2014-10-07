@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body {
+            font-style: italic;
+            font-family: Calibri;
+        }
+
+        #content {
+            width: 500px;
+            height: 320px;
+            background-color: #FFC0CB;
+        }
+
+            #content h1 {
+                font-weight: bolder;
+                text-align: center;
+            }
+
+        #lb_to {
+            margin-left: 225px;
+        }
+
+        .rightEl {
+            margin-left: 150px;
+        }
+
+        #pref {
+            margin-left: 265px;
+        }
+
+        .leftElements {
+            width: 42%;
+            margin-left: 5%;
+        }
+
+        .lb_timeint {
+            margin-left: 163px;
+        }
+
+        #lb_ret {
+            margin-left: 185px;
+        }
+
+        .time_div {
+            display: inline-block;
+            width: 45%;
+            margin-left: 5%;
+        }
+
+        .time {
+            width: 42%;
+        }
+
+        #num_div {
+            width: 42%;
+            margin-left: 5%;
+            display: inline-block;
+        }
+
+            #num_div div {
+                width: 30%;
+                display: inline-block;
+                margin-right: 4px;
+            }
+
+                #num_div div input {
+                    width: 100%;
+                }
+
+        #chooseClass {
+            display: inline-block;
+            margin-left: 6%;
+        }
+
+        #chooseClass label {
+            display: block;
+        }
+
+        button {
+            width: 41%;
+            height: 30px;
+            margin-left: 54%;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>FLIGHT ORDER</h1>
+        <form>
+            <div>
+                <label id="lb_from" for="leftSel">From</label>
+                <label id="lb_to" for="rightSel" class="rightEl">To</label>
+            </div>
+            <select id="leftSel" class="leftElements">
+                <option>ender a city</option>
+                <option>Sofia</option>
+                <option>Plovdiv</option>
+                <option>Varna</option>
+                <option>Burgas</option>
+                <option>Pleven</option>
+                <option>Stara Zagora</option>
+            </select>
+            <select id="rightSel" class="leftElements">
+                <option>ender a city</option>
+                <option>Sofia</option>
+                <option>Plovdiv</option>
+                <option>Varna</option>
+                <option>Burgas</option>
+                <option>Pleven</option>
+                <option>Stara Zagora</option>
+            </select>
+
+            <div>
+                <input type="checkbox" id="pref" />
+                <label for="pref">Prefer directs</label>
+            </div>
+            <div>
+                <label>Departure Date</label>
+                <label class="lb_timeint">Time Interval</label>
+            </div>
+
+            <input type="date" class="leftElements" value="09.06.2014 г." />
+
+            <div class="time_div">
+                <input type="time" class="time" value="00:20" />
+                <input type="time" class="time" value="05:00" />
+            </div>
+
+
+            <div>
+                <label>Return Date</label>
+                <label id="lb_ret">Time Interval</label>
+            </div>
+
+            <input type="date" class="leftElements" />
+            <div class="time_div">
+                <input type="time" class="time" value="16:00" />
+                <input type="time" class="time" value="22:00" />
+            </div>
+
+            <div id="num_div">
+                <div>
+                    <label class="lb_num">12+</label>
+                    <input type="number" class="num" value="0" />
+                </div>
+                <div>
+                    <label class="lb_num">2-12</label>
+                    <input type="number" class="num" value="0" />
+                </div>
+                <div id="numbers_div">
+                    <label class="lb_num">0-2</label>
+                    <input type="number" class="num" value="0" />
+                </div>
+
+            </div>
+            <div id="chooseClass">
+                <label>Choose class</label>
+                <select>
+                    <option>Economy</option>
+                </select>
+            </div>
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>

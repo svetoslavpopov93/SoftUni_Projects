@@ -1,0 +1,6 @@
+D:\Coding\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem1_School\bin\Debug\Problem1_School.exe.config
+D:\Coding\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem1_School\bin\Debug\Problem1_School.exe
+D:\Coding\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem1_School\bin\Debug\Problem1_School.pdb
+D:\Coding\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem1_School\obj\Debug\Problem1_School.csprojResolveAssemblyReference.cache
+D:\Coding\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem1_School\obj\Debug\Problem1_School.exe
+D:\Coding\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem1_School\obj\Debug\Problem1_School.pdb

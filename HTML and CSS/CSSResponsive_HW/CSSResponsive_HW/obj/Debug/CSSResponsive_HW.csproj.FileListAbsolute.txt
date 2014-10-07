@@ -1,0 +1,5 @@
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSResponsive_HW\CSSResponsive_HW\bin\CSSResponsive_HW.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSResponsive_HW\CSSResponsive_HW\bin\CSSResponsive_HW.pdb
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSResponsive_HW\CSSResponsive_HW\obj\Debug\CSSResponsive_HW.csprojResolveAssemblyReference.cache
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSResponsive_HW\CSSResponsive_HW\obj\Debug\CSSResponsive_HW.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSResponsive_HW\CSSResponsive_HW\obj\Debug\CSSResponsive_HW.pdb

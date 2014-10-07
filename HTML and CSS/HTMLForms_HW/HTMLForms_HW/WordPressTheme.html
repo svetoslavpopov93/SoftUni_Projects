@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        p, div, span, h1, h2, img, a {
+            margin: 0;
+            padding: 0;
+        }
+
+        #logo {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            float: left;
+        }
+
+        #logo_div {
+            height: 120px;
+            width: 455px;
+        }
+
+            #logo_div p {
+                display: inline-block;
+                width: 260px;
+                height: 85px;
+                text-align: center;
+                margin-top: 15px;
+                font-size: 50px;
+                font-family: 'Palatino Linotype';
+                font-weight: bold;
+                color: #414141;
+            }
+
+                #logo_div p span {
+                    color: #20759C;
+                }
+
+        #search_logo {
+            width: 30px;
+            height: 30px;
+        }
+
+        #search_logo img {
+            width: 29px;
+            height: 29px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <a href="">
+            <div id="logo_div">
+                <img src="img/logo.png" id="logo" />
+                <p><span>Word</span>Press</p>
+            </div>
+        </a>
+
+        <p>Upload a theme
+            <input type="file" /></p>
+        <p>
+            Or search in WordPress
+            <input type="text" />
+            <a href="#" id="search_logo">
+                <img src="img/search_logo.png" /></a>
+        </p>
+    </form>
+</body>
+</html>

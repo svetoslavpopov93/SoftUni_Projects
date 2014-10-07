@@ -1,0 +1,6 @@
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\Problem3_PCCatalog\bin\Debug\Problem3_PCCatalog.exe.config
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\Problem3_PCCatalog\bin\Debug\Problem3_PCCatalog.exe
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\Problem3_PCCatalog\bin\Debug\Problem3_PCCatalog.pdb
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\Problem3_PCCatalog\obj\Debug\Problem3_PCCatalog.csprojResolveAssemblyReference.cache
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\Problem3_PCCatalog\obj\Debug\Problem3_PCCatalog.exe
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\Problem3_PCCatalog\obj\Debug\Problem3_PCCatalog.pdb

@@ -1,0 +1,5 @@
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSOverview_HW\CSSOverview_HW\bin\CSSOverview_HW.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSOverview_HW\CSSOverview_HW\bin\CSSOverview_HW.pdb
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSOverview_HW\CSSOverview_HW\obj\Debug\CSSOverview_HW.csprojResolveAssemblyReference.cache
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSOverview_HW\CSSOverview_HW\obj\Debug\CSSOverview_HW.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSOverview_HW\CSSOverview_HW\obj\Debug\CSSOverview_HW.pdb

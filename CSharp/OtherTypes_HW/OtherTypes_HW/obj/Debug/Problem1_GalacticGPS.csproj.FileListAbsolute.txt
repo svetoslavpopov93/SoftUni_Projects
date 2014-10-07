@@ -1,0 +1,6 @@
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\OtherTypes_HW\obj\Debug\Problem1_GalacticGPS.csprojResolveAssemblyReference.cache
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\OtherTypes_HW\bin\Debug\OtherTypes_HW.exe.config
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\OtherTypes_HW\bin\Debug\OtherTypes_HW.exe
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\OtherTypes_HW\bin\Debug\OtherTypes_HW.pdb
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\OtherTypes_HW\obj\Debug\OtherTypes_HW.exe
+D:\Coding\Visual Studio 2012\Projects\OtherTypes_HW\OtherTypes_HW\obj\Debug\OtherTypes_HW.pdb

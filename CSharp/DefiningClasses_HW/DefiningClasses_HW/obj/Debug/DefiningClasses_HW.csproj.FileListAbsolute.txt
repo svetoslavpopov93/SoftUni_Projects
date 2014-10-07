@@ -1,0 +1,6 @@
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\DefiningClasses_HW\bin\Debug\DefiningClasses_HW.exe.config
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\DefiningClasses_HW\bin\Debug\DefiningClasses_HW.exe
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\DefiningClasses_HW\bin\Debug\DefiningClasses_HW.pdb
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\DefiningClasses_HW\obj\Debug\DefiningClasses_HW.csprojResolveAssemblyReference.cache
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\DefiningClasses_HW\obj\Debug\DefiningClasses_HW.exe
+C:\Users\Svetoslav\Documents\GitHub\JSTeamwork\DefiningClasses_HW\DefiningClasses_HW\obj\Debug\DefiningClasses_HW.pdb

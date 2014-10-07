@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body {
+            color: white;
+        }
+
+        #content {
+            background-color: #3B5997;
+            width: 600px;
+            height: 425px;
+        }
+
+        fieldset {
+            display: inline-block;
+            float: left;
+        }
+
+        #logo_div {
+            height: 60px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            font-family: Consolas;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            margin-left: 180px;
+        }
+
+        h2, h3 {
+            text-align: center;
+        }
+
+        #none_imp {
+            border-radius: 10px;
+            width: 165px;
+            height: 186px;
+        }
+
+            #none_imp legend {
+                font-size: 13px;
+                font-weight: bold;
+                font-family: Calibri;
+            }
+
+        .non-tf {
+            width: 43%;
+            border-radius: 5px;
+        }
+
+        .right-non {
+            margin-left: 5px;
+        }
+
+        #datepicker {
+            border-radius: 3px;
+        }
+
+        .lbl {
+            font-size: 12px;
+        }
+
+        #imp {
+            width: 325px;
+            margin-left: 30px;
+            border-radius: 10px;
+        }
+
+            #imp legend {
+            }
+
+            #imp select, #imp input {
+                border-radius: 5px;
+            }
+
+        .thirtyWidth {
+            width: 31%;
+        }
+
+        .fifteenWidth {
+            width: 15%;
+        }
+
+        #ta {
+            width: 320px;
+            border-radius: 5px;
+        }
+
+        #clear {
+            width: 207px;
+            height: 34px;
+            border-radius: 7px;
+            margin-left: 3px;
+            margin-top: 10px;
+        }
+
+        #register {
+            width: 355px;
+            height: 34px;
+            border-radius: 7px;
+            margin-left: 29px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="logo_div">
+            <h1>fakebook</h1>
+            &#174;
+        </div>
+        <h2>Registration</h2>
+        <h3>It is safe and it will always be!</h3>
+
+        <form>
+            <fieldset id="none_imp">
+                <legend>None-Important Information</legend>
+                <div>
+                    <input type="text" class="non-tf" placeholder="First Name" />
+                    <input type="text" class="non-tf right-non" placeholder="Last Name" />
+                </div>
+                <div>
+                    <input type="email" class="non-tf" placeholder="Your Email" />
+                    <input type="number" class="non-tf right-non" placeholder="Phone Number" />
+                </div>
+                <div>
+                    <input type="password" class="non-tf" placeholder="Your Password" />
+                    <input type="url" class="non-tf right-non" placeholder="Website" />
+                </div>
+
+                <label for="datepicker">Birthday</label>
+                <input type="date" id="datepicker" />
+                <input id="fm" type="radio" name="gender" />
+                <label for="fm" class="lbl">Female</label>
+                <input id="ml" type="radio" name="gender" />
+                <label for="ml" class="lbl">Male</label>
+                <input id="ot" type="radio" name="gender" />
+                <label for="ot" class="lbl">Other</label>
+            </fieldset>
+
+            <fieldset id="imp">
+                <legend>Important Information *required</legend>
+                <div>
+                    <select class="thirtyWidth">
+                        <option>Country</option>
+                    </select>
+
+                    <input type="text" placeholder="Village" class="thirtyWidth" />
+                    <input type="text" placeholder="District" class="thirtyWidth" />
+                </div>
+                <div>
+                    <input type="text" class="thirtyWidth" placeholder="Street" />
+                    <input type="text" class="fifteenWidth" placeholder="Nr." />
+                    <input type="text" class="fifteenWidth" placeholder="Floor" />
+                    <input type="text" class="fifteenWidth" placeholder="Ap. Nr." />
+                </div>
+                <label for="cp">Door Color</label>
+                <div>
+                    <input type="color" value="#FF80C0" class="thirtyWidth" id="cp" />
+                    <input type="text" class="thirtyWidth" placeholder="Water Meter Nr." />
+                    <input type="number" class="thirtyWidth" placeholder="Aunt Panties' Size" />
+                </div>
+                <label for="ta">More Personal Information</label>
+                <textarea id="ta"></textarea>
+            </fieldset>
+
+            <button type="reset" id="clear">Clear Form</button>
+            <button type="submit" id="register">Register</button>
+        </form>
+    </div>
+</body>
+</html>

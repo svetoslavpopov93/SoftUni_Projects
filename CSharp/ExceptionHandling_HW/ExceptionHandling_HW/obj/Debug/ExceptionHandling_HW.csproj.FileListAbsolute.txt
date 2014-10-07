@@ -1,0 +1,6 @@
+E:\Coding\Visual Studio 2012\Projects\ExceptionHandling_HW\ExceptionHandling_HW\bin\Debug\ExceptionHandling_HW.exe.config
+E:\Coding\Visual Studio 2012\Projects\ExceptionHandling_HW\ExceptionHandling_HW\bin\Debug\ExceptionHandling_HW.exe
+E:\Coding\Visual Studio 2012\Projects\ExceptionHandling_HW\ExceptionHandling_HW\bin\Debug\ExceptionHandling_HW.pdb
+E:\Coding\Visual Studio 2012\Projects\ExceptionHandling_HW\ExceptionHandling_HW\obj\Debug\ExceptionHandling_HW.csprojResolveAssemblyReference.cache
+E:\Coding\Visual Studio 2012\Projects\ExceptionHandling_HW\ExceptionHandling_HW\obj\Debug\ExceptionHandling_HW.exe
+E:\Coding\Visual Studio 2012\Projects\ExceptionHandling_HW\ExceptionHandling_HW\obj\Debug\ExceptionHandling_HW.pdb

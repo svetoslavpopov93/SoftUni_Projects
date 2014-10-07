@@ -1,0 +1,5 @@
+c:\users\svetoslav\documents\visual studio 2012\Projects\SemanticHTML_HW\SemanticHTML_HW\bin\SemanticHTML_HW.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\SemanticHTML_HW\SemanticHTML_HW\bin\SemanticHTML_HW.pdb
+c:\users\svetoslav\documents\visual studio 2012\Projects\SemanticHTML_HW\SemanticHTML_HW\obj\Debug\SemanticHTML_HW.csprojResolveAssemblyReference.cache
+c:\users\svetoslav\documents\visual studio 2012\Projects\SemanticHTML_HW\SemanticHTML_HW\obj\Debug\SemanticHTML_HW.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\SemanticHTML_HW\SemanticHTML_HW\obj\Debug\SemanticHTML_HW.pdb

@@ -1,0 +1,6 @@
+D:\Coding\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem2_HumanStudentAndWorker\bin\Debug\Problem2_HumanStudentAndWorker.exe.config
+D:\Coding\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem2_HumanStudentAndWorker\bin\Debug\Problem2_HumanStudentAndWorker.exe
+D:\Coding\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem2_HumanStudentAndWorker\bin\Debug\Problem2_HumanStudentAndWorker.pdb
+D:\Coding\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem2_HumanStudentAndWorker\obj\Debug\Problem2_HumanStudentAndWorker.exe
+D:\Coding\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem2_HumanStudentAndWorker\obj\Debug\Problem2_HumanStudentAndWorker.pdb
+D:\Coding\Visual Studio 2012\Projects\InheritanceAndAbstraction_HW\Problem2_HumanStudentAndWorker\obj\Debug\Problem2_HumanStudentAndWorker.csprojResolveAssemblyReference.cache

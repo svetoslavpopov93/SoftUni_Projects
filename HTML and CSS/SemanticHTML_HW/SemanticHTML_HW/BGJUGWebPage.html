@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body {
+            font-family: Consolas;
+        }
+
+        a {
+            text-decoration: none;
+            color: #9C9C9C;
+        }
+
+        h1 {
+            font-family: Calibri;
+        }
+
+        #menu li {
+            display: inline-block;
+            list-style-type: none;
+            padding-right: 20px;
+        }
+
+        #search_div {
+            width: 200px;
+            margin-left: 555px;
+        }
+
+        #search_box {
+            float: left;
+        }
+
+        #left_aside {
+            display: inline-block;
+            width: 200px;
+            border-top: 1px solid #9C9C9C;
+            margin-top: 40px;
+            float: left;
+            margin-right: 50px;
+        }
+
+            #left_aside a {
+                margin-bottom: 15px;
+                display: inline-block;
+                color: #5A83AB;
+            }
+
+        article {
+            display: inline-block;
+            width: 605px;
+            float: left;
+        }
+
+        .continue {
+            color: blue;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        #previous {
+            margin-top: 35px;
+            display: inline-block;
+        }
+
+        #right_aside {
+            margin-left: 50px;
+        }
+
+        #right_aside label {
+            display: block;
+            color: #BFBFBF;
+        }
+
+        #bottom_txt {
+            height: 30px;
+            width: 100%;
+            margin-top: 520px;
+            color: #B4B3B3;
+            background-color: #F7F7F7;
+            padding-top: 7px;
+            padding-left: 40px;
+            margin-bottom: 0;
+        }
+
+        footer {
+            background-color: black;
+            display: block;
+            height: 200px;
+        }
+
+        footer article {
+            display: inline-block;
+            float: left;
+            width: 200px;
+            margin-left: 30px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BGJUG - Bulgarian Java User Group</h1>
+
+        <ul id="menu">
+            <li>
+                <a href="" id="about_btn">
+                    <p>ABOUT</p>
+                </a>
+            </li>
+            <li>
+                <a href="" id="events_btn">
+                    <p>EVENTS</p>
+                </a>
+            </li>
+            <li>
+                <a href="" id="contacts_btn">
+                    <p>CONTACTS</p>
+                </a>
+            </li>
+            <li>
+                <div id="search_div">
+                    <input type="text" id="search_box" placeholder="Search"/>
+                    <input type="button" id="search_btn" />
+                </div>
+            </li>
+        </ul>
+        <hr />
+    </header>
+
+    <aside id="left_aside">
+        <a href="">An Architecture for E-Voting</a>
+        <a href="">Integration Tests for External Services</a>
+        <a href="">Algorithmic Music Influenced by Tweets</a>
+        <a href="">The Low Quality of Scientific Code</a>
+        <a href="">Development "Methodologies"</a>
+    </aside>
+
+    <article id="main_content">
+        <h2 class="heading">An Architecture for E-Voting</h2>
+        <p>
+            by 
+            <a href="" class="article_ling bolder">BOZHO</a> on 
+            <span class="bolder">MAY</span> 27.2014 
+            <a href="" id="article_link">LEAVE A COMMENT</a>
+        </p>
+
+        <p>
+            E-voting is a hot topic in my country, and has been discussed a lot everywhere. Since we are already using the internet and touch-screen technologies in our everyday lives, why not appy that to voting? And not for the sake of technology itself, but in order to prevent technical mistakes and election fraud, and make [<a href="">...</a>]
+        </p>
+
+        <a href="" class="continue">Continue Reading &#8594;</a>
+
+
+
+        <h2 class="heading">The Optional Type API</h2>
+        <p>
+            by 
+            <a href="" class="article_ling bolder">BOZHO</a> on 
+            <span class="bolder">MARCH</span> 19.2014 
+            <a href="" id="a1">LEAVE A COMMENT</a>
+        </p>
+
+        <p>
+            Java 8 introduces the Optional class. In a nutshell, instead of returning null, and then checking for null, you return an Optional instance, which can either have or not have a value set. That way you don't fall with NullPointerException. I won't discuss whether the Optional type will eliminate NPEs completely (it won't). Instead I'll [<a href="">...</a>]    
+        </p>
+
+        <a href="" class="continue">Continue Reading &#8594;</a>
+
+        <hr />
+
+        <a href="" class="continue" id="previous">&#8592; Previous Entries</a>
+    </article>
+
+    <aside id="right_aside">
+        <label for="lang_sel">LANGUAGE</label>
+        <hr />
+        <select id="lang_sel">
+            <option>Bulgaria</option>
+        </select>
+        <hr />
+        <label>BLOGROLL</label>
+    </aside>
+
+    <p id="bottom_txt">
+        Set your Twitter account name in your settings to use the TwitterBar Section.
+    </p>
+
+    <footer>
+        <article>
+            <h3>BGJUG-Java Bulgarian User Group</h3>
+        </article>
+        <article>
+            <label>PLACES</label>
+            <a href="" >About</a>
+            <a href="" >Events</a>
+            <a href="" >Contacts</a>
+        </article>
+        <article>
+            <label>THE LATEST</label>
+            <a href="">An Architecture for E-Voting</a>
+            <p>E-voting is a hot topic in my country and has been discussed [<a href="">...</a>]</p>
+        </article>
+        <article>
+            <label>MORE</label>
+            <p>Thanks for dropping by! Feel free to join the discussion by leaving comment, and stay updated by subscribing to the <a href="">RSS feed.</a></p>
+        </article>
+        <article>
+            <p>&#169; 2011 BGJUG - Java Bulgarian User Group</p>
+        </article>
+    </footer>
+</body>
+</html>

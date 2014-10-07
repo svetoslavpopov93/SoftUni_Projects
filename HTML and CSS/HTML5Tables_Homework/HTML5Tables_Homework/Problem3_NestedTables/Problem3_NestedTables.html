@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Nested Tables</title>
+    <style>
+        table, td {
+            border: 1px solid black;
+        }
+
+        #pic_td {
+            width: 130px;
+            height: 160px;
+        }
+
+        #text_td {
+            width: 190px;
+            height: 150px;
+        }
+
+            #text_td #soft {
+                width: 167px;
+            }
+
+        #nested_table {
+                margin-left: 5px;
+                margin-right: 5px;
+        }
+
+        #logo {
+            width: 120px;
+            height: 120px;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+
+        #soft {
+            height: 33px;
+        }
+        #uni {
+            height: 33px;
+        }
+    </style>
+</head>
+<body>
+    <table id="main_table">
+        <tr>
+            <td id="pic_td">
+                <img id="logo" src="img/logo.png" />
+            </td>
+            <td id="text_td">
+                <table id="nested_table">
+                    <tr>
+                        <td>
+                            <p id="soft">Software</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="uni">University</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

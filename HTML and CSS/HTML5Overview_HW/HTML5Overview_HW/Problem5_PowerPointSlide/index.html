@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Power Point Slide</title>
+    <style>
+        body {
+            background-image: url("img/background.png");
+            color: #FBEEC9;
+        }
+
+        h2 {
+            font-family: Calibri;
+            color: #FFFFFF;
+            font-size: 1.8em;
+        }
+
+        .heading {
+            font-family: Calibri;
+            color: #F3BE60;
+            font-size: 2.7em;
+        }
+
+        .lst {
+            color: #F2B254;
+            list-style-type: square;
+            font-size: 1.2em;
+        }
+
+        .bracketed {
+            color: #F3BE60;
+        }
+
+        p {
+            color: #FBEEC9;
+            font-family: Consolas;
+            font-size: 1.5em;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .divSection {
+            border: 1px solid #939393;
+            width: 80%;
+            padding-left: 20px;
+        }
+
+        #paddedP {
+            padding-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Headings and Paragraphs</h1>
+
+    <ul class="lst">
+        <li>
+            <h2>Heading Tags: <span class="bracketed">&#60;h1&#62;</span> - <span class="bracketed">&#60;h6&#62;</span></h2>
+            <div class="divSection">
+                <p>&#60;h1&#62;Heading 1&#60;/h1&#62;</p>
+                <p>&#60;h2&#62;Sub heading 2&#60;/h2&#62;</p>
+                <p>&#60;h3&#62;Sub heading 3&#60;/h3&#62;</p>
+            </div>
+        </li>
+        <li>
+            <h2>Paragraph Tags: <span class="bracketed">&#60;p&#62;</span></h2>
+            <div class="divSection">
+                <p>&#60;p&#62;This is my first paragraph&#60;/p&#62;</p>
+                <p>&#60;p&#62;This is my second paragraph&#60;/p&#62;</p>
+            </div>
+        </li>
+        <li>
+            <h2>Sections: <span class="bracketed">&#60;div&#62;</span> and <span class="bracketed">&#60;span&#62;</span></h2>
+            <div class="divSection">
+                <p>&#60;div style="background: skyblue;"&#62;</p>
+                <p id="paddedP">This is a div</p>
+                <p>&#60;/div&#62;</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

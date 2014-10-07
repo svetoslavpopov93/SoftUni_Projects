@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SoftUni</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Calibri;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 5px 10px 5px;
+        }
+
+            a:hover {
+                border-radius: 5px;
+                background-color: #4CA0DB;
+            }
+
+        table {
+            padding: 0;
+            margin: 0;
+            height: 110px;
+            width: 100%;
+            background-color: #234465;
+        }
+
+        tr {
+            height: 110px;
+            padding: 0;
+            margin: 0;
+        }
+
+        td {
+            margin: 0;
+            padding: 0;
+        }
+
+        #logo_td {
+            width: 50%;
+        }
+
+        #menu_td {
+            width: 50%;
+        }
+
+        #main #main_row #logo_td #logo {
+            width: 250px;
+            height: 100px;
+            margin: 0;
+            padding: 0;
+            margin-left: 100px;
+        }
+
+        #first_menu, #second_menu {
+            height: 54px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .link {
+            margin-right: 6px;
+        }
+
+        #ta {
+            width: 220px;
+            height: 32px;
+            border-radius: 8px;
+            font-size: 1.8em;
+            vertical-align: central;
+            text-align: left;
+        }
+
+        #user {
+            width: 40px;
+            padding-left: 260px;
+        }
+    </style>
+</head>
+<body>
+    <table id="main">
+        <tr id="main_row">
+            <td id="logo_td">
+                <img id="logo" src="img/logo.png" />
+            </td>
+            <td id="menu_td">
+                <table>
+                    <tr id="first_menu">
+                        <td id="user">
+                            <a href="" class="link">
+                                <span>USER</span>
+                            </a>
+                        </td>
+                        <td id="search">
+                            <img src="img/bell.png" />
+                            <textarea id="ta" placeholder="Търси..."></textarea>
+                        </td>
+                    </tr>
+                    <tr id="second_menu">
+                        <td colspan="2">
+                            <a href="" class="link">
+                                <span>НОВИНИ</span>
+                            </a>
+                            <a href="" class="link">
+                                <span>ЗА УНИВЕРСИТЕТА</span>
+                            </a>
+                            <a href="" class="link">
+                                <span>ОБУЧЕНИЯ</span>
+                            </a>
+                            <a href="" class="link">
+                                <span>ЗА ФИРМИ</span>
+                            </a>
+                            <a href="" class="link">
+                                <span>ФОРУМ</span>
+                            </a>
+                            <a href="">
+                                <span>КОНТАКТИ</span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

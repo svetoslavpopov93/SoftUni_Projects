@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Simple Table</title>
+    <style>
+        #table {
+            border: 1px solid black;
+        }
+
+            #table caption {
+                font-family: Consolas;
+                border: 1px solid black;
+                margin: 0;
+                padding: 0;
+                height: 30px;
+            }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        td, tr, th {
+            border: 1px solid black;
+        }
+
+        .num {
+            width: 35px;
+        }
+
+        .fname {
+            width: 130px;
+        }
+
+        .lname {
+            width: 130px;
+        }
+
+        .score {
+            width: 65px;
+        }
+
+        #footer {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table id="table">
+        <caption><h2>Web fundamentals exam results</h2></caption>
+        <thead>
+            <tr>
+                <th class="thead num">№</th>
+                <th class="thead fname">First Name</th>
+                <th class="thead lname">Last Name</th>
+                <th class="thead score">Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="num">01</td>
+                <td class="fname">Gosho</td>
+                <td class="lname">Goshev</td>
+                <td class="score">500</td>
+            </tr>
+            <tr>
+                <td class="num">02</td>
+                <td class="fname">Tosho</td>
+                <td class="lname">Toshev</td>
+                <td class="score">500</td>
+            </tr>
+            <tr>
+                <td class="num">03</td>
+                <td class="fname">Pesho</td>
+                <td class="lname">Peshev</td>
+                <td class="score">500</td>
+            </tr>
+            <tr>
+                <td class="num">04</td>
+                <td class="fname">Gencho</td>
+                <td class="lname">Genchev</td>
+                <td class="score">500</td>
+            </tr>
+            <tr>
+                <td class="num">05</td>
+                <td class="fname">Dragana</td>
+                <td class="lname">Draganova</td>
+                <td class="score">500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="footer" colspan="4">Average score from 05 participants: 500</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

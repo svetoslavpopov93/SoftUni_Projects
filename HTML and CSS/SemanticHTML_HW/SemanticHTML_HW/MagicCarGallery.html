@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            color: yellow;
+            font-family: Calibri;
+            font-size: 45px;
+            margin-left: 80px;
+        }
+
+        iframe {
+            border: 3px solid yellow;
+        }
+
+        a {
+            width: 400px;
+            height: 400px;
+            font-family: Calibri;
+            font-style: italic;
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+        }
+
+        aside {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Magic Car Gallery</h1>
+    </header>
+
+    <aside>
+        <iframe scrolling="no" width="300" height="187" boder="0"
+            src="img/bmw_m1.jpg" name="imgbox" id="imgbox">
+            <p>iframes are not supported by your browser.</p>
+        </iframe>
+        <br />
+    </aside>
+    <section>
+        <a href="img/bmw_m1.jpg" target="imgbox">BMW M1</a><br />
+        <a href="img/bmw_e92.jpg" target="imgbox">BMW E92</a><br />
+        <a href="img/bmw_f12.jpg" target="imgbox">BMW F12</a><br />
+        <a href="img/bmw_x6.jpg" target="imgbox">BMW X6</a>
+    </section>
+</body>
+</html>

@@ -1,0 +1,5 @@
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSLayout_HW\CSSLayout_HW\bin\CSSLayout_HW.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSLayout_HW\CSSLayout_HW\bin\CSSLayout_HW.pdb
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSLayout_HW\CSSLayout_HW\obj\Debug\CSSLayout_HW.csprojResolveAssemblyReference.cache
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSLayout_HW\CSSLayout_HW\obj\Debug\CSSLayout_HW.dll
+c:\users\svetoslav\documents\visual studio 2012\Projects\CSSLayout_HW\CSSLayout_HW\obj\Debug\CSSLayout_HW.pdb

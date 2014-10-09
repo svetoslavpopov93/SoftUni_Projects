@@ -1,0 +1,6 @@
+D:\Coding\Visual Studio 2012\Projects\Encapsulation-and-Polymorphism\Problem_2.Bank_of_Kurtovo_Konare\obj\Debug\Problem_2.Bank_of_Kurtovo_Konare.csprojResolveAssemblyReference.cache
+D:\Coding\Visual Studio 2012\Projects\Encapsulation-and-Polymorphism\Problem_2.Bank_of_Kurtovo_Konare\bin\Debug\Problem_2.Bank_of_Kurtovo_Konare.exe.config
+D:\Coding\Visual Studio 2012\Projects\Encapsulation-and-Polymorphism\Problem_2.Bank_of_Kurtovo_Konare\bin\Debug\Problem_2.Bank_of_Kurtovo_Konare.exe
+D:\Coding\Visual Studio 2012\Projects\Encapsulation-and-Polymorphism\Problem_2.Bank_of_Kurtovo_Konare\bin\Debug\Problem_2.Bank_of_Kurtovo_Konare.pdb
+D:\Coding\Visual Studio 2012\Projects\Encapsulation-and-Polymorphism\Problem_2.Bank_of_Kurtovo_Konare\obj\Debug\Problem_2.Bank_of_Kurtovo_Konare.exe
+D:\Coding\Visual Studio 2012\Projects\Encapsulation-and-Polymorphism\Problem_2.Bank_of_Kurtovo_Konare\obj\Debug\Problem_2.Bank_of_Kurtovo_Konare.pdb

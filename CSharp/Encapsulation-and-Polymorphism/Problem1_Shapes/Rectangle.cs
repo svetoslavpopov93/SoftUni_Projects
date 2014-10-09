@@ -10,8 +10,6 @@ namespace Problem1_Shapes
     {
         private double a;
         private double b;
-        private double perimeter;
-        private double area;
 
         public double A
         {
@@ -44,30 +42,6 @@ namespace Problem1_Shapes
             set
             {
                 this.b = value;
-            }
-        }
-
-        public double Area
-        {
-            get
-            {
-                return CalculateArea();
-            }
-            set
-            {
-                this.area = value;
-            }
-        }
-
-        public double Perimeter
-        {
-            get
-            {
-                return CalculatePerimeter();
-            }
-            set
-            {
-                this.perimeter = value;
             }
         }
 

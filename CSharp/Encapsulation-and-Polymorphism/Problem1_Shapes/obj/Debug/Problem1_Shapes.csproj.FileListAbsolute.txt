@@ -4,3 +4,9 @@ D:\Coding\Visual Studio 2012\Projects\Encapsulation-and-Polymorphism\Problem1_Sh
 D:\Coding\Visual Studio 2012\Projects\Encapsulation-and-Polymorphism\Problem1_Shapes\obj\Debug\Problem1_Shapes.exe
 D:\Coding\Visual Studio 2012\Projects\Encapsulation-and-Polymorphism\Problem1_Shapes\obj\Debug\Problem1_Shapes.pdb
 D:\Coding\Visual Studio 2012\Projects\Encapsulation-and-Polymorphism\Problem1_Shapes\obj\Debug\Problem1_Shapes.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni_Projects\CSharp\Encapsulation-and-Polymorphism\Problem1_Shapes\bin\Debug\Problem1_Shapes.exe.config
+D:\Coding\SoftUni_Projects\CSharp\Encapsulation-and-Polymorphism\Problem1_Shapes\obj\Debug\Problem1_Shapes.exe
+D:\Coding\SoftUni_Projects\CSharp\Encapsulation-and-Polymorphism\Problem1_Shapes\obj\Debug\Problem1_Shapes.pdb
+D:\Coding\SoftUni_Projects\CSharp\Encapsulation-and-Polymorphism\Problem1_Shapes\obj\Debug\Problem1_Shapes.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni_Projects\CSharp\Encapsulation-and-Polymorphism\Problem1_Shapes\bin\Debug\Problem1_Shapes.exe
+D:\Coding\SoftUni_Projects\CSharp\Encapsulation-and-Polymorphism\Problem1_Shapes\bin\Debug\Problem1_Shapes.pdb

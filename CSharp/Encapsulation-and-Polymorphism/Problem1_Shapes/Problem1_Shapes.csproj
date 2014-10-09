@@ -42,8 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicShape.cs" />
+    <Compile Include="Circle.cs" />
     <Compile Include="IShape.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="ShapesTestLab.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Triangle.cs" />

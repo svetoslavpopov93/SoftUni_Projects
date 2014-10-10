@@ -1,0 +1,6 @@
+D:\Coding\SoftUni_Projects\CSharp\BattleShips_Game\BattleShips_Game\bin\Debug\BattleShips_Game.exe.config
+D:\Coding\SoftUni_Projects\CSharp\BattleShips_Game\BattleShips_Game\bin\Debug\BattleShips_Game.exe
+D:\Coding\SoftUni_Projects\CSharp\BattleShips_Game\BattleShips_Game\bin\Debug\BattleShips_Game.pdb
+D:\Coding\SoftUni_Projects\CSharp\BattleShips_Game\BattleShips_Game\obj\Debug\BattleShips_Game.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni_Projects\CSharp\BattleShips_Game\BattleShips_Game\obj\Debug\BattleShips_Game.exe
+D:\Coding\SoftUni_Projects\CSharp\BattleShips_Game\BattleShips_Game\obj\Debug\BattleShips_Game.pdb

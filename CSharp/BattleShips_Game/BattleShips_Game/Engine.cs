@@ -10,13 +10,15 @@ namespace BattleShips_Game
     {
         private List<List<char>> gameBoard;
         private Battleship battleShip;
-        private Battleship battleShip1;
+        private Destroyer firstDestroyer;
+        private Destroyer secondDestroyer;
         //Destroyer
 
         public Engine()
         {
             gameBoard = GenerateGameBoard();
-            AddBattleShip(); AddBattleShip1();
+            //AddBattleShip();
+            AddShips();
         }
 
         private List<List<char>> GenerateGameBoard()
@@ -52,7 +54,8 @@ namespace BattleShips_Game
         private void AddShips()
         {
             AddBattleShip();
-            AddBattleShip1();
+            AddFirstDestroyer();
+            AddSecondDestroyer();
         }
 
         public void AddBattleShip()
@@ -83,13 +86,13 @@ namespace BattleShips_Game
                 }
             }
         }
-        public void AddBattleShip1()
+        private void AddFirstDestroyer()
         {
-            battleShip1 = new Battleship();
-            List<ShipPart> parts = battleShip1.Parts;
+            firstDestroyer = new Destroyer();
+            List<ShipPart> parts = firstDestroyer.Parts;
             bool emptyField = true;
 
-            for (int i = 0; i < battleShip1.Parts.Count; i++)
+            for (int i = 0; i < firstDestroyer.Parts.Count; i++)
             {
                 if (gameBoard[parts[i].X][parts[i].Y] != '.')
                 {
@@ -100,20 +103,44 @@ namespace BattleShips_Game
 
             if (emptyField == false)
             {
-                AddBattleShip1();
+                AddFirstDestroyer();
             }
 
             else
             {
-                for (int i = 0; i < battleShip1.Parts.Count; i++)
+                for (int i = 0; i < firstDestroyer.Parts.Count; i++)
                 {
                     gameBoard[parts[i].X][parts[i].Y] = '#';
                 }
             }
         }
-
-        private void AddDestroyer()
+        private void AddSecondDestroyer()
         {
+            secondDestroyer = new Destroyer();
+            List<ShipPart> parts = secondDestroyer.Parts;
+            bool emptyField = true;
+
+            for (int i = 0; i < secondDestroyer.Parts.Count; i++)
+            {
+                if (gameBoard[parts[i].X][parts[i].Y] != '.')
+                {
+                    emptyField = false;
+                    break;
+                }
+            }
+
+            if (emptyField == false)
+            {
+                AddSecondDestroyer();
+            }
+
+            else
+            {
+                for (int i = 0; i < secondDestroyer.Parts.Count; i++)
+                {
+                    gameBoard[parts[i].X][parts[i].Y] = '#';
+                }
+            }
         }
 
         private void Run()

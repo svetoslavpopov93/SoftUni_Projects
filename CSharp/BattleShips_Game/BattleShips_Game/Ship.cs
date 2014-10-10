@@ -20,6 +20,7 @@ namespace BattleShips_Game
         public abstract int GenerateX(Random rand, bool isHorisontal);
         public abstract int GenerateY(Random rand, bool isHorisontal);
         public abstract bool GenerateHorisontality(Random rand);
+        public abstract void GenerateShipParts();
         public abstract void SinkShip();
     }
 }

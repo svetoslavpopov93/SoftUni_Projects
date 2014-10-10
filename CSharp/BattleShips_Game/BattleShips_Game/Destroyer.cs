@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BattleShips_Game
 {
-    class Battleship : Ship
+    class Destroyer : Ship
     {
         private int x;
         private int y;
@@ -63,8 +63,7 @@ namespace BattleShips_Game
             set { }
         }
 
-        
-        public Battleship():base()
+        public Destroyer()
         {
             Random random = new Random();
             isHorisontal = GenerateHorisontality(random);
@@ -83,9 +82,9 @@ namespace BattleShips_Game
 
                 while (true)
                 {
-                    currentX = rand.Next(0, 10);
+                    currentX = rand.Next(0, 7);
 
-                    if (currentX <= 5)
+                    if (currentX <= 6)
                     {
                         break;
                     }
@@ -96,7 +95,7 @@ namespace BattleShips_Game
 
             else
             {
-                return rand.Next(0, 10);
+                return rand.Next(0, 7);
             }
         }
 
@@ -104,7 +103,7 @@ namespace BattleShips_Game
         {
             if (isHorisontal == true)
             {
-                return rand.Next(0, 10);
+                return rand.Next(0, 7);
             }
             else
             {
@@ -112,9 +111,9 @@ namespace BattleShips_Game
 
                 while (true)
                 {
-                    currentY = rand.Next(0, 10);
+                    currentY = rand.Next(0, 7);
 
-                    if (currentY <= 5)
+                    if (currentY <= 6)
                     {
                         break;
                     }
@@ -136,16 +135,11 @@ namespace BattleShips_Game
             }
         }
 
-        public override void SinkShip()
-        {
-            this.IsAlive = false;
-        }
-
         public override void GenerateShipParts()
         {
             if (isHorisontal == true)
             {
-                for (int i = 0; i < 5; i++)
+                for (int i = 0; i < 4; i++)
                 {
                     ShipPart prt = new ShipPart(x + i, y);
                     this.parts.Add(prt);
@@ -153,12 +147,17 @@ namespace BattleShips_Game
             }
             else
             {
-                for (int i = 0; i < 5; i++)
+                for (int i = 0; i < 4; i++)
                 {
                     ShipPart prt = new ShipPart(x, y + i);
                     this.parts.Add(prt);
                 }
             }
+        }
+
+        public override void SinkShip()
+        {
+            this.IsAlive = false;
         }
     }
 }

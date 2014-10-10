@@ -1,0 +1,6 @@
+D:\Coding\SoftUni_Projects\CSharp\Encapsulation-and-Polymorphism\TheSlum\bin\Debug\TheSlum.exe.config
+D:\Coding\SoftUni_Projects\CSharp\Encapsulation-and-Polymorphism\TheSlum\bin\Debug\TheSlum.exe
+D:\Coding\SoftUni_Projects\CSharp\Encapsulation-and-Polymorphism\TheSlum\bin\Debug\TheSlum.pdb
+D:\Coding\SoftUni_Projects\CSharp\Encapsulation-and-Polymorphism\TheSlum\obj\Debug\TheSlum.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni_Projects\CSharp\Encapsulation-and-Polymorphism\TheSlum\obj\Debug\TheSlum.exe
+D:\Coding\SoftUni_Projects\CSharp\Encapsulation-and-Polymorphism\TheSlum\obj\Debug\TheSlum.pdb

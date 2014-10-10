@@ -1,0 +1,5 @@
+D:\Coding\SoftUni_Projects\CSharp\NamingIdentifiers_HW\C#\Minesweapers\bin\Debug\Minesweeper.exe
+D:\Coding\SoftUni_Projects\CSharp\NamingIdentifiers_HW\C#\Minesweapers\bin\Debug\Minesweeper.pdb
+D:\Coding\SoftUni_Projects\CSharp\NamingIdentifiers_HW\C#\Minesweapers\obj\Debug\project.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni_Projects\CSharp\NamingIdentifiers_HW\C#\Minesweapers\obj\Debug\Minesweeper.exe
+D:\Coding\SoftUni_Projects\CSharp\NamingIdentifiers_HW\C#\Minesweapers\obj\Debug\Minesweeper.pdb

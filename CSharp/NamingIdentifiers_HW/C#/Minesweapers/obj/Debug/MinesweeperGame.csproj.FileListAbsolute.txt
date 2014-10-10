@@ -1,0 +1,2 @@
+D:\Coding\SoftUni_Projects\CSharp\NamingIdentifiers_HW\C#\Minesweapers\obj\Debug\Minesweeper.exe
+D:\Coding\SoftUni_Projects\CSharp\NamingIdentifiers_HW\C#\Minesweapers\obj\Debug\Minesweeper.pdb

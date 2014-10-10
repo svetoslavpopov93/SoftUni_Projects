@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem_2.Bank_of_Kurtovo_K
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem1_Shapes", "Problem1_Shapes\Problem1_Shapes.csproj", "{C3A61E9B-F9ED-4338-A7D7-BA91C0710D70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheSlum", "TheSlum\TheSlum.csproj", "{9398013B-7143-46E5-8976-DAA86D703E47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{C3A61E9B-F9ED-4338-A7D7-BA91C0710D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3A61E9B-F9ED-4338-A7D7-BA91C0710D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3A61E9B-F9ED-4338-A7D7-BA91C0710D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9398013B-7143-46E5-8976-DAA86D703E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9398013B-7143-46E5-8976-DAA86D703E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9398013B-7143-46E5-8976-DAA86D703E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9398013B-7143-46E5-8976-DAA86D703E47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,7 +13,7 @@ namespace BattleShips_Game
             Engine engine = new Engine();
             Battleship testShip = new Battleship();
 
-            engine.PrintGameBoard();
+            engine.Run();
         }
     }
 }

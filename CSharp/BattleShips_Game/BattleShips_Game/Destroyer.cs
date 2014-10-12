@@ -74,6 +74,12 @@ namespace BattleShips_Game
             GenerateShipParts();
         }
 
+        /// <summary>
+        /// Generates the value of X coordinate index, depending on the direction of the ship and the placement on the game field
+        /// </summary>
+        /// <param name="rand">The Random variable is declared in the constructor once, and then given as a parameter, to avoid code repeat</param>
+        /// <param name="isHorisontal"></param>
+        /// <returns>Returns the X index</returns>
         public override int GenerateX(Random rand, bool isHorisontal)
         {
             if (isHorisontal == true)
@@ -99,6 +105,12 @@ namespace BattleShips_Game
             }
         }
 
+        /// <summary>
+        /// Generates the value of Y coordinate index, depending on the direction of the ship and the placement on the game field
+        /// </summary>
+        /// <param name="rand">The Random variable is declared in the constructor once, and then given as a parameter, to avoid code repeat</param>
+        /// <param name="isHorisontal"></param>
+        /// <returns>Returns the Y index</returns>
         public override int GenerateY(Random rand, bool isHorisontal)
         {
             if (isHorisontal == true)
@@ -123,6 +135,11 @@ namespace BattleShips_Game
             }
         }
 
+        /// <summary>
+        /// Generates the direction of the ship
+        /// </summary>
+        /// <param name="rand"></param>
+        /// <returns>Returns a bool value to determine if the ship will be horisontal or not</returns>
         public override bool GenerateHorisontality(Random rand)
         {
             if (rand.Next(0, 2) == 1)

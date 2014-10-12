@@ -28,7 +28,6 @@ namespace BattleShips_Game
             }
             set { }
         }
-
         public bool IsAlive
         {
             get

@@ -47,7 +47,14 @@ namespace BattleShips_Game
             {
                 foreach (var element in line)
                 {
-                    Console.Write(element);
+                    if (element == '#' | element == '@')
+                    {
+                        Console.Write('.');
+                    }
+                    else
+                    {
+                        Console.Write(element);
+                    }
                 }
 
                 Console.WriteLine();
@@ -60,8 +67,9 @@ namespace BattleShips_Game
             AddFirstDestroyer();
             AddSecondDestroyer();
         }
+
         /// <summary>
-        /// //////////////////////possible misstake here
+        /// Adds a Battle ship with 5 parts, at random position and random direction (vertical or horisontal)
         /// </summary>
         public void AddBattleShip()
         {
@@ -69,6 +77,7 @@ namespace BattleShips_Game
             List<ShipPart> parts = battleShip.Parts;
             bool emptyField = true;
 
+            // Performs a check depending on the direction, to prevent overlapping
             for (int i = 0; i < battleShip.Parts.Count; i++)
             {
                 if (gameBoard[parts[i].X][parts[i].Y] != '.')
@@ -78,6 +87,7 @@ namespace BattleShips_Game
                 }
             }
 
+            // If there is overlapping found the same method is called recursively
             if (emptyField == false)
             {
                 AddBattleShip();
@@ -92,12 +102,16 @@ namespace BattleShips_Game
             }
         }
 
+        /// <summary>
+        /// Adds a Destroyer ship with 4 parts, at random position and random direction (vertical or horisontal)
+        /// </summary>
         private void AddFirstDestroyer()
         {
             firstDestroyer = new Destroyer();
             List<ShipPart> parts = firstDestroyer.Parts;
             bool emptyField = true;
 
+            // Performs a check depending on the direction, to prevent overlapping
             for (int i = 0; i < firstDestroyer.Parts.Count; i++)
             {
                 if (gameBoard[parts[i].X][parts[i].Y] != '.')
@@ -107,6 +121,7 @@ namespace BattleShips_Game
                 }
             }
 
+            // If there is overlapping found the same method is called recursively
             if (emptyField == false)
             {
                 AddFirstDestroyer();
@@ -121,12 +136,16 @@ namespace BattleShips_Game
             }
         }
 
+        /// <summary>
+        /// Adds a Destroyer ship with 4 parts, at random position and random direction (vertical or horisontal)
+        /// </summary>
         private void AddSecondDestroyer()
         {
             secondDestroyer = new Destroyer();
             List<ShipPart> parts = secondDestroyer.Parts;
             bool emptyField = true;
 
+            // Performs a check depending on the direction, to prevent overlapping
             for (int i = 0; i < secondDestroyer.Parts.Count; i++)
             {
                 if (gameBoard[parts[i].X][parts[i].Y] != '.')
@@ -136,6 +155,7 @@ namespace BattleShips_Game
                 }
             }
 
+            // If there is overlapping found the same method is called recursively
             if (emptyField == false)
             {
                 AddSecondDestroyer();
@@ -150,8 +170,13 @@ namespace BattleShips_Game
             }
         }
 
+        /// <summary>
+        /// Reads the user input and converts the input in the needed format
+        /// </summary>
         private void ReadUserInput()
         {
+            Console.WriteLine("Enter coordinates in format e.g. A2:");
+
             string input = Console.ReadLine();
             string vertical, horisontal;
 
@@ -171,34 +196,34 @@ namespace BattleShips_Game
 
             switch (vertical)
             {
-                case "A":
+                case "a":
                     numY = 0;
                     break;
-                case "B":
+                case "b":
                     numY = 1;
                     break;
-                case "C":
+                case "c":
                     numY = 2;
                     break;
-                case "D":
+                case "d":
                     numY = 3;
                     break;
-                case "E":
+                case "e":
                     numY = 4;
                     break;
-                case "F":
+                case "f":
                     numY = 5;
                     break;
-                case "G":
+                case "g":
                     numY = 6;
                     break;
-                case "H":
+                case "h":
                     numY = 7;
                     break;
-                case "I":
+                case "i":
                     numY = 8;
                     break;
-                case "J":
+                case "j":
                     numY = 9;
                     break;
                 default:
@@ -210,6 +235,9 @@ namespace BattleShips_Game
             inputX = numX;
         }
 
+        /// <summary>
+        /// Checks if the user hits or misses ship and applies changes to the parts of the ship on hit.
+        /// </summary>
         private void CheckInput()
         {
             if (gameBoard[inputY][inputX] == '.')
@@ -219,6 +247,9 @@ namespace BattleShips_Game
                 Console.WriteLine("---miss---");
                 Console.WriteLine("{0} moves ware made.", turnsCount);
             }
+
+            // On the game board with '#' are marked the Destroyers parts and with '@' are market the Battle ship parts
+            // If the user hits a ship the status of the hitted part is changed.
             else if (gameBoard[inputY][inputX] == '#' | gameBoard[inputY][inputX] == '@')
             {
                 turnsCount++;
@@ -228,10 +259,11 @@ namespace BattleShips_Game
                 UpdateFirstDestroyerParts(inputY, inputX);
                 UpdateSecondDestroyerParts(inputY, inputX);
                 UpdateBattleShip(inputY, inputX);
-                // TODO: check all ships if user hitted them!
                 Console.WriteLine("{0} moves ware made.", turnsCount);
             }
-            else if (gameBoard[inputY][inputX] == 'X')
+
+            // Performs a check if the user hits on a same place twice
+            else if (gameBoard[inputY][inputX] == 'X' | gameBoard[inputY][inputX] == '-')
             {
                 turnsCount++;
                 gameBoard[inputY][inputX] = 'X';
@@ -241,15 +273,16 @@ namespace BattleShips_Game
         }
 
         /// <summary>
-        /// 
+        /// Searches all parts of the first Destroyer and if the coordinates of the user input matches with a part from the ship
+        /// the part is destroyed using the implemented method in its class
         /// </summary>
-        /// <param name="firstIndex"></param>
-        /// <param name="secondIndex"></param>
-        private void UpdateFirstDestroyerParts(int firstIndex, int secondIndex)
+        /// <param name="xIndex">Matches the X coordinate parameter</param>
+        /// <param name="yIndex">Matches the Y coordinate parameter</param>
+        private void UpdateFirstDestroyerParts(int xIndex, int yIndex)
         {
             foreach (var part in this.firstDestroyer.Parts)
             {
-                if (part.X == firstIndex && part.Y == secondIndex)
+                if (part.X == xIndex && part.Y == yIndex)
                 {
                     part.DestroyPart();
                     break;
@@ -257,11 +290,17 @@ namespace BattleShips_Game
             }
         }
 
-        private void UpdateSecondDestroyerParts(int x, int y)
+        /// <summary>
+        /// Searches all parts of the second Destroyer and if the coordinates of the user input matches with a part from the ship
+        /// the part is destroyed using the implemented method in its class
+        /// </summary>
+        /// <param name="xIndex">Matches the X coordinate parameter</param>
+        /// <param name="yIndex">Matches the Y coordinate parameter</param>
+        private void UpdateSecondDestroyerParts(int xIndex, int yIndex)
         {
             foreach (var part in this.secondDestroyer.Parts)
             {
-                if (part.X == x && part.Y == y)
+                if (part.X == xIndex && part.Y == yIndex)
                 {
                     part.DestroyPart();
                     break;
@@ -269,11 +308,17 @@ namespace BattleShips_Game
             }
         }
 
-        private void UpdateBattleShip(int x, int y)
+        /// <summary>
+        /// Searches all parts of the Battleship and if the coordinates of the user input matches with a part from the ship
+        /// the part is destroyed using the implemented method in its class
+        /// </summary>
+        /// <param name="xIndex">Matches the X coordinate parameter</param>
+        /// <param name="yIndex">Matches the Y coordinate parameter</param>
+        private void UpdateBattleShip(int xIndex, int yIndex)
         {
             foreach (var part in battleShip.Parts)
             {
-                if (part.X == x && part.Y == y)
+                if (part.X == xIndex && part.Y == yIndex)
                 {
                     part.DestroyPart();
                     break;
@@ -281,6 +326,10 @@ namespace BattleShips_Game
             }
         }
 
+        /// <summary>
+        /// Checks if all parts of the first Destroyer ship are destroyed
+        /// </summary>
+        /// <returns>True of False</returns>
         public bool CheckFirstDestroyer()
         {
             bool isAlive = true;
@@ -302,6 +351,10 @@ namespace BattleShips_Game
             return isAlive;
         }
 
+        /// <summary>
+        /// Checks if all parts of the second Destroyer ship are destroyed
+        /// </summary>
+        /// <returns>True of False</returns>
         public bool CheckSecondDestroyer()
         {
             bool isAlive = true;
@@ -323,6 +376,10 @@ namespace BattleShips_Game
             return isAlive;
         }
 
+        /// <summary>
+        /// Checks if all parts of the Battleship are destroyed
+        /// </summary>
+        /// <returns>True of False</returns>
         public bool CheckBattleship()
         {
             bool isAlive = true;
@@ -344,18 +401,9 @@ namespace BattleShips_Game
             return isAlive;
         }
 
-        private bool UpdateGameStatus()
-        {
-            if (!firstDestroyer.IsAlive && !secondDestroyer.IsAlive && !battleShip.IsAlive)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
+        /// <summary>
+        /// Checks all ships for their current status. If all of their parts are destroyed, the ship's "sink" method is called
+        /// </summary>
         private void UpdateShipStatus()
         {
             if (CheckFirstDestroyer() == false)
@@ -372,10 +420,26 @@ namespace BattleShips_Game
             }
         }
 
+        /// <summary>
+        /// Checks if all ships are still alive.
+        /// </summary>
+        /// <returns>True of False</returns>
+        private bool UpdateGameStatus()
+        {
+            if (!firstDestroyer.IsAlive && !secondDestroyer.IsAlive && !battleShip.IsAlive)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public void PrintEndGameMessage(int turns)
         {
             Console.Clear();
-            Console.WriteLine("You have finished the game with {0} turns.", turns);
+            Console.WriteLine("Well done! You completed the game in {0} turns.", turns);
         }
 
         public void Run()
@@ -397,7 +461,6 @@ namespace BattleShips_Game
                     break;
                 }
 
-                PrintGameBoard();
                 Thread.Sleep(150);
             }
 

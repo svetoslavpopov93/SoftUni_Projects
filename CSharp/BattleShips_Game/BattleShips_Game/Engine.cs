@@ -43,7 +43,6 @@ namespace BattleShips_Game
 
         public void PrintGameBoard()
         {
-            Console.Clear();
             foreach (var line in gameBoard)
             {
                 foreach (var element in line)
@@ -61,7 +60,9 @@ namespace BattleShips_Game
             AddFirstDestroyer();
             AddSecondDestroyer();
         }
-
+        /// <summary>
+        /// //////////////////////possible misstake here
+        /// </summary>
         public void AddBattleShip()
         {
             battleShip = new Battleship();
@@ -86,7 +87,7 @@ namespace BattleShips_Game
             {
                 for (int i = 0; i < battleShip.Parts.Count; i++)
                 {
-                    gameBoard[parts[i].X][parts[i].Y] = '#';
+                    gameBoard[parts[i].X][parts[i].Y] = '@';
                 }
             }
         }
@@ -152,55 +153,61 @@ namespace BattleShips_Game
         private void ReadUserInput()
         {
             string input = Console.ReadLine();
-            string x, y;
-            if (input.Length == 2)
+            string vertical, horisontal;
+
+            if (input.Length == 3)
             {
-                x = input[0] + "";
-                y = input[1] + "";
+                vertical = input[0] + "";
+                horisontal = input[1] + "" + input[2];
             }
             else
             {
-                x = input[0] + "";
-                y = input[1] + "" + input[2];
+                vertical = "" + input[0];
+                horisontal = "" + input[1];
             }
 
-            switch (x)
+            int numX = 0;
+            int numY = 0;
+
+            switch (vertical)
             {
                 case "A":
-                    inputY = 0;
+                    numY = 0;
                     break;
                 case "B":
-                    inputY = 1;
+                    numY = 1;
                     break;
                 case "C":
-                    inputY = 2;
+                    numY = 2;
                     break;
                 case "D":
-                    inputY = 3;
+                    numY = 3;
                     break;
                 case "E":
-                    inputY = 4;
+                    numY = 4;
                     break;
                 case "F":
-                    inputY = 5;
+                    numY = 5;
                     break;
                 case "G":
-                    inputY = 6;
+                    numY = 6;
                     break;
                 case "H":
-                    inputY = 7;
+                    numY = 7;
                     break;
                 case "I":
-                    inputY = 8;
+                    numY = 8;
                     break;
                 case "J":
-                    inputY = 9;
+                    numY = 9;
                     break;
                 default:
                     break;
             }
 
-            inputX = int.Parse(y) - 1;
+            numX = int.Parse(horisontal) - 1;
+            inputY = numY;
+            inputX = numX;
         }
 
         private void CheckInput()
@@ -212,11 +219,16 @@ namespace BattleShips_Game
                 Console.WriteLine("---miss---");
                 Console.WriteLine("{0} moves ware made.", turnsCount);
             }
-            else if (gameBoard[inputY][inputX] == '#')
+            else if (gameBoard[inputY][inputX] == '#' | gameBoard[inputY][inputX] == '@')
             {
                 turnsCount++;
                 gameBoard[inputY][inputX] = 'X';
+                Console.Beep();
                 Console.WriteLine("---HIT!--- ");
+                UpdateFirstDestroyerParts(inputY, inputX);
+                UpdateSecondDestroyerParts(inputY, inputX);
+                UpdateBattleShip(inputY, inputX);
+                // TODO: check all ships if user hitted them!
                 Console.WriteLine("{0} moves ware made.", turnsCount);
             }
             else if (gameBoard[inputY][inputX] == 'X')
@@ -228,17 +240,168 @@ namespace BattleShips_Game
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="firstIndex"></param>
+        /// <param name="secondIndex"></param>
+        private void UpdateFirstDestroyerParts(int firstIndex, int secondIndex)
+        {
+            foreach (var part in this.firstDestroyer.Parts)
+            {
+                if (part.X == firstIndex && part.Y == secondIndex)
+                {
+                    part.DestroyPart();
+                    break;
+                }
+            }
+        }
+
+        private void UpdateSecondDestroyerParts(int x, int y)
+        {
+            foreach (var part in this.secondDestroyer.Parts)
+            {
+                if (part.X == x && part.Y == y)
+                {
+                    part.DestroyPart();
+                    break;
+                }
+            }
+        }
+
+        private void UpdateBattleShip(int x, int y)
+        {
+            foreach (var part in battleShip.Parts)
+            {
+                if (part.X == x && part.Y == y)
+                {
+                    part.DestroyPart();
+                    break;
+                }
+            }
+        }
+
+        public bool CheckFirstDestroyer()
+        {
+            bool isAlive = true;
+
+            foreach (var element in firstDestroyer.Parts)
+            {
+                if (element.IsAlive == false)
+                {
+                    isAlive = false;
+                }
+
+                if (isAlive == false && element.IsAlive == true)
+                {
+                    isAlive = true;
+                    break;
+                }
+            }
+
+            return isAlive;
+        }
+
+        public bool CheckSecondDestroyer()
+        {
+            bool isAlive = true;
+
+            foreach (var element in secondDestroyer.Parts)
+            {
+                if (element.IsAlive == false)
+                {
+                    isAlive = false;
+                }
+
+                if (isAlive == false && element.IsAlive == true)
+                {
+                    isAlive = true;
+                    break;
+                }
+            }
+
+            return isAlive;
+        }
+
+        public bool CheckBattleship()
+        {
+            bool isAlive = true;
+
+            foreach (var element in battleShip.Parts)
+            {
+                if (element.IsAlive == false)
+                {
+                    isAlive = false;
+                }
+
+                if (isAlive == false && element.IsAlive == true)
+                {
+                    isAlive = true;
+                    break;
+                }
+            }
+
+            return isAlive;
+        }
+
+        private bool UpdateGameStatus()
+        {
+            if (!firstDestroyer.IsAlive && !secondDestroyer.IsAlive && !battleShip.IsAlive)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void UpdateShipStatus()
+        {
+            if (CheckFirstDestroyer() == false)
+            {
+                firstDestroyer.SinkShip();
+            }
+            if (CheckSecondDestroyer() == false)
+            {
+                secondDestroyer.SinkShip();
+            }
+            if (CheckBattleship() == false)
+            {
+                battleShip.SinkShip();
+            }
+        }
+
+        public void PrintEndGameMessage(int turns)
+        {
+            Console.Clear();
+            Console.WriteLine("You have finished the game with {0} turns.", turns);
+        }
+
         public void Run()
         {
             PrintGameBoard();
+            bool gameFinished = false;
 
             while (true)
             {
                 ReadUserInput();
+                Console.Clear();
                 CheckInput();
+                UpdateShipStatus();
+                PrintGameBoard();
+                gameFinished = UpdateGameStatus();
+
+                if (gameFinished)
+                {
+                    break;
+                }
+
                 PrintGameBoard();
                 Thread.Sleep(150);
             }
+
+            PrintEndGameMessage(turnsCount);
         }
     }
 }

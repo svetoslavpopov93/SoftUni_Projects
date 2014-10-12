@@ -52,7 +52,7 @@ namespace BattleShips_Game
             {
                 return this.isAlive;
             }
-            private set { }
+            set { }
         }
         public List<ShipPart> Parts
         {
@@ -157,7 +157,7 @@ namespace BattleShips_Game
 
         public override void SinkShip()
         {
-            this.IsAlive = false;
+            this.isAlive = false;
         }
     }
 }

@@ -10,6 +10,7 @@ namespace BattleShips_Game
     {
         private int x;
         private int y;
+        private bool isAlive;
 
         public int X
         {
@@ -28,10 +29,25 @@ namespace BattleShips_Game
             set { }
         }
 
+        public bool IsAlive
+        {
+            get
+            {
+                return this.isAlive;
+            }
+            set { }
+        }
+
         public ShipPart(int xValue, int yValue)
         {
             x = xValue;
             y = yValue;
+            isAlive = true;
+        }
+
+        public void DestroyPart()
+        {
+            this.isAlive = false;
         }
     }
 }

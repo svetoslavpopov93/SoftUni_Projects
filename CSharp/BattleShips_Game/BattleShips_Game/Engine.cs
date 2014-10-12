@@ -194,7 +194,7 @@ namespace BattleShips_Game
             int numX = 0;
             int numY = 0;
 
-            switch (vertical)
+            switch (vertical.ToLower())
             {
                 case "a":
                     numY = 0;

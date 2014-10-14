@@ -20,7 +20,7 @@ namespace BattleShips_Game
         public Engine()
         {
             gameBoard = GenerateGameBoard();
-            turnsCount = -1;
+            turnsCount = 0;
             AddShips();
         }
 
@@ -43,17 +43,23 @@ namespace BattleShips_Game
 
         public void PrintGameBoard()
         {
+            Console.WriteLine("  1 2 3 4 5 6 7 8 9 10");
+            int index = 0;
+
             foreach (var line in gameBoard)
             {
+                Console.Write((char)(65 + index));
+                index++;
+
                 foreach (var element in line)
                 {
                     if (element == '#' | element == '@')
                     {
-                        Console.Write('.');
+                        Console.Write(" .");
                     }
                     else
                     {
-                        Console.Write(element);
+                        Console.Write(" " + element);
                     }
                 }
 
@@ -194,42 +200,7 @@ namespace BattleShips_Game
             int numX = 0;
             int numY = 0;
 
-            switch (vertical.ToLower())
-            {
-                case "a":
-                    numY = 0;
-                    break;
-                case "b":
-                    numY = 1;
-                    break;
-                case "c":
-                    numY = 2;
-                    break;
-                case "d":
-                    numY = 3;
-                    break;
-                case "e":
-                    numY = 4;
-                    break;
-                case "f":
-                    numY = 5;
-                    break;
-                case "g":
-                    numY = 6;
-                    break;
-                case "h":
-                    numY = 7;
-                    break;
-                case "i":
-                    numY = 8;
-                    break;
-                case "j":
-                    numY = 9;
-                    break;
-                default:
-                    break;
-            }
-
+            numY = (int)((char)vertical.ToLower()[0]) - 97;
             numX = int.Parse(horisontal) - 1;
             inputY = numY;
             inputX = numX;

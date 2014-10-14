@@ -84,17 +84,7 @@ namespace BattleShips_Game
         {
             if (isHorisontal == true)
             {
-                int currentX = 0;
-
-                while (true)
-                {
-                    currentX = rand.Next(0, 7);
-
-                    if (currentX <= 6)
-                    {
-                        break;
-                    }
-                }
+                int currentX = rand.Next(0, 7);
 
                 return currentX;
             }
@@ -119,17 +109,7 @@ namespace BattleShips_Game
             }
             else
             {
-                int currentY = 0;
-
-                while (true)
-                {
-                    currentY = rand.Next(0, 7);
-
-                    if (currentY <= 6)
-                    {
-                        break;
-                    }
-                }
+                int currentY = rand.Next(0, 7);
 
                 return currentY;
             }

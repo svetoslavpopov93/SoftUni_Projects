@@ -63,7 +63,8 @@ namespace BattleShips_Game
             set { }
         }
 
-        public Battleship():base()
+        public Battleship()
+            : base()
         {
             Random random = new Random();
             isHorisontal = GenerateHorisontality(random);
@@ -84,17 +85,7 @@ namespace BattleShips_Game
         {
             if (isHorisontal == true)
             {
-                int currentX = 0;
-
-                while (true)
-                {
-                    currentX = rand.Next(0, 10);
-
-                    if (currentX <= 5)
-                    {
-                        break;
-                    }
-                }
+                int currentX = rand.Next(0, 6);
 
                 return currentX;
             }
@@ -119,17 +110,7 @@ namespace BattleShips_Game
             }
             else
             {
-                int currentY = 0;
-
-                while (true)
-                {
-                    currentY = rand.Next(0, 10);
-
-                    if (currentY <= 5)
-                    {
-                        break;
-                    }
-                }
+                int currentY = rand.Next(0, 6);
 
                 return currentY;
             }

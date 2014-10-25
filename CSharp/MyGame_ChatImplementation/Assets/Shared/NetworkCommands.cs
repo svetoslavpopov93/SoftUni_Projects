@@ -55,7 +55,7 @@ namespace Continental.Games
         public const short MESSAGE_SEND = 1012;
         public const short MESSAGE_RECIEVE = 1013;
         public const short AUTHORIZE_GUEST = 1014;
-        //public const short AUTHORIZE_GUEST_OK = 1014;
+        public const short AUTHORIZE_GUEST_OK = 1014;
         public const short AUTHORIZE_GUEST_SUCESSFUL = 1015;
 	}
 }

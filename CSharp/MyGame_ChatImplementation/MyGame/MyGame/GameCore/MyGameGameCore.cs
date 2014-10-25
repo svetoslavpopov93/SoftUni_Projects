@@ -47,6 +47,12 @@ namespace Continental.Games
                         {
                             if (plr.username == ((Player)command).username && plr.password == ((Player)command).password)
                             {
+
+                                //Check for free playerId > PlayersInGame.Add(.....)
+                                //response.connectionSuccess = true;
+                                //response.responseCommand....
+                                //response.responseContext = NetworkCommands.AUTHORIZE_RESPONSE_OK
+                                ///return response;
                                 if (PlayersInGame.ContainsKey(plr.playerId))
                                 {
                                     ulong oldConnId = PlayersInGame[plr.playerId].connectionId;
@@ -112,7 +118,7 @@ namespace Continental.Games
                     case NetworkCommands.AUTHORIZE_GUEST:
                         Player guestPlayer = new Player() { username = "guest", password = "guestPassword", enabled = true, playerId = 1};
                         respMsg = new PlayerRegisterResponse();
-                        
+
                         guestPlayer.username = guestPlayer.username.Trim();
                         Player plrExistingg = playersAll.Values.Where(w => w.playerId.Equals(guestPlayer.playerId)).FirstOrDefault();
                         if (plrExistingg != null)
@@ -129,18 +135,9 @@ namespace Continental.Games
                             }
                         }
 
-                        bool playerExists = false;
+                        plrExistingg = playersAll.Values.Where(w => w.username.Equals(guestPlayer.username, StringComparison.InvariantCultureIgnoreCase)).FirstOrDefault();
 
-                        foreach (var plr in PlayersInGame)
-                        {
-                            if (plr.Value.Name == guestPlayer.username)
-                            {
-                                playerExists = true;
-                                break;
-                            }
-                        }
-
-                        if (playerExists)
+                        if (plrExistingg != null)
                         {
                             for (int i = 0; i < 200; i++)
                             {
@@ -155,23 +152,10 @@ namespace Continental.Games
                             }
                         }
 
-                        while (true)
-                        {
-                            if (CheckForId(guestPlayer))
-                            {
-                                guestPlayer.playerId++;
-                            }
-                            else
-                            {
-                                break;
-                            }
-                        }
-                        
-
                         PlayersInGame.Add(guestPlayer.playerId, LoadAndPlaceCharacter(guestPlayer, connectionId));
                         response.connectionSuccess = true;
                             response.responseCommand = guestPlayer;
-                            response.responseContext = NetworkCommands.AUTHORIZE_RESPONSE_OK;
+                            response.responseContext = NetworkCommands.AUTHORIZE_GUEST_SUCESSFUL;
                             NotifyPlayerAdded(PlayersInGame[guestPlayer.playerId]);
                             return response;
 
@@ -185,21 +169,6 @@ namespace Continental.Games
             }
             response.connectionSuccess = false;
             return response;
-        }
-
-        private bool CheckForId(Player pl)
-        {
-            bool containsId = false;
-
-            foreach (var plr in PlayersInGame)
-            {
-                if (plr.Value.playerId == pl.playerId)
-                {
-                    return containsId = true;
-                }
-            }
-
-            return false;
         }
 
         /// <summary>

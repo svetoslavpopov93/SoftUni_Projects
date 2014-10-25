@@ -1,0 +1,6 @@
+D:\Coding\SoftUni_Projects\CSharp\CommonTypeSystem_HW\Problem2_StringDisperser\bin\Debug\Problem2_StringDisperser.exe.config
+D:\Coding\SoftUni_Projects\CSharp\CommonTypeSystem_HW\Problem2_StringDisperser\bin\Debug\Problem2_StringDisperser.exe
+D:\Coding\SoftUni_Projects\CSharp\CommonTypeSystem_HW\Problem2_StringDisperser\bin\Debug\Problem2_StringDisperser.pdb
+D:\Coding\SoftUni_Projects\CSharp\CommonTypeSystem_HW\Problem2_StringDisperser\obj\Debug\Problem2_StringDisperser.exe
+D:\Coding\SoftUni_Projects\CSharp\CommonTypeSystem_HW\Problem2_StringDisperser\obj\Debug\Problem2_StringDisperser.pdb
+D:\Coding\SoftUni_Projects\CSharp\CommonTypeSystem_HW\Problem2_StringDisperser\obj\Debug\Problem2_StringDisperser.csprojResolveAssemblyReference.cache

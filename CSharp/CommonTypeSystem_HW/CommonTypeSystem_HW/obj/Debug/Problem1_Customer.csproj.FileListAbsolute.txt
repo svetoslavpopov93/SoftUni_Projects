@@ -1,0 +1,6 @@
+D:\Coding\SoftUni_Projects\CSharp\CommonTypeSystem_HW\CommonTypeSystem_HW\bin\Debug\CommonTypeSystem_HW.exe.config
+D:\Coding\SoftUni_Projects\CSharp\CommonTypeSystem_HW\CommonTypeSystem_HW\bin\Debug\CommonTypeSystem_HW.exe
+D:\Coding\SoftUni_Projects\CSharp\CommonTypeSystem_HW\CommonTypeSystem_HW\bin\Debug\CommonTypeSystem_HW.pdb
+D:\Coding\SoftUni_Projects\CSharp\CommonTypeSystem_HW\CommonTypeSystem_HW\obj\Debug\CommonTypeSystem_HW.exe
+D:\Coding\SoftUni_Projects\CSharp\CommonTypeSystem_HW\CommonTypeSystem_HW\obj\Debug\CommonTypeSystem_HW.pdb
+D:\Coding\SoftUni_Projects\CSharp\CommonTypeSystem_HW\CommonTypeSystem_HW\obj\Debug\Problem1_Customer.csprojResolveAssemblyReference.cache

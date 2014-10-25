@@ -186,8 +186,8 @@ public class Login : MonoBehaviour
 	/// Clear last error message if any. Close network connection to server if open. Connect to game server and send authorize request.
 	/// </summary>
 	private void Connect(short context)
-	{
-		Debug.Log("ServerIPEndpoint: " + serverEndpoint.ToString());
+    {
+        Debug.Log("ServerIPEndpoint: " + serverEndpoint.ToString());
 		connection = new ServerConnection(serverEndpoint, gameID, version);
 		connection.disconnectedCallback = OnNetDisconnected;
 		lastError = "";
@@ -198,8 +198,9 @@ public class Login : MonoBehaviour
 			handshakeDone = response.connectionSuccess;
 			switch (response.responseContext)
 			{
-			case NetworkCommands.AUTHORIZE_RESPONSE_OK:
+                case NetworkCommands.AUTHORIZE_RESPONSE_OK:
 				myPlayer = (Player)response.responseCommand;
+                    Debug.Log(myPlayer.playerId);
 				if (!passwords.ContainsKey(username))
 				{
 					passwords.Add(username, password);

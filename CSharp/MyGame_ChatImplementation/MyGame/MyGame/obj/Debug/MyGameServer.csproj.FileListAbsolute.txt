@@ -11,3 +11,16 @@ C:\Users\Svetoslav\Desktop\MyGame_ChatImplementation\MyGame\MyGame\bin\Debug\Ser
 C:\Users\Svetoslav\Desktop\MyGame_ChatImplementation\MyGame\MyGame\bin\Debug\Shared.pdb
 C:\Users\Svetoslav\Desktop\MyGame_ChatImplementation\MyGame\MyGame\obj\Debug\MyGameServer.exe
 C:\Users\Svetoslav\Desktop\MyGame_ChatImplementation\MyGame\MyGame\obj\Debug\MyGameServer.pdb
+D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\MyGame\MyGame\bin\Debug\MyGameServer.exe.config
+D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\MyGame\MyGame\obj\Debug\MyGameServer.exe
+D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\MyGame\MyGame\obj\Debug\MyGameServer.pdb
+D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\MyGame\MyGame\bin\Debug\MyGameServer.exe
+D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\MyGame\MyGame\bin\Debug\MyGameServer.pdb
+D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\MyGame\MyGame\bin\Debug\GCCEmulator.dll
+D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\MyGame\MyGame\bin\Debug\Npgsql.dll
+D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\MyGame\MyGame\bin\Debug\ServerLib.dll
+D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\MyGame\MyGame\bin\Debug\Shared.dll
+D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\MyGame\MyGame\bin\Debug\Mono.Security.dll
+D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\MyGame\MyGame\bin\Debug\ServerLib.pdb
+D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\MyGame\MyGame\bin\Debug\Shared.pdb
+D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\MyGame\MyGame\obj\Debug\MyGameServer.csprojResolveAssemblyReference.cache

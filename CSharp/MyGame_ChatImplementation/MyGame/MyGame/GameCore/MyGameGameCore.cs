@@ -47,12 +47,6 @@ namespace Continental.Games
                         {
                             if (plr.username == ((Player)command).username && plr.password == ((Player)command).password)
                             {
-
-                                //Check for free playerId > PlayersInGame.Add(.....)
-                                //response.connectionSuccess = true;
-                                //response.responseCommand....
-                                //response.responseContext = NetworkCommands.AUTHORIZE_RESPONSE_OK
-                                ///return response;
                                 if (PlayersInGame.ContainsKey(plr.playerId))
                                 {
                                     ulong oldConnId = PlayersInGame[plr.playerId].connectionId;
@@ -61,6 +55,7 @@ namespace Continental.Games
                                     response.responseCommand = new ClosedConnectionInfo { reason = ClosedConnectionInfo.DisconnectedReason.LoggedFromDifferentLocation };
                                     return response;
                                 }
+                                //PlIG Ket = 22, id = 22
                                 PlayersInGame.Add(plr.playerId, LoadAndPlaceCharacter(playersAll[plr.playerId], connectionId));
                                 response.connectionSuccess = true;
                                 response.responseCommand = plr;
@@ -116,30 +111,40 @@ namespace Continental.Games
                         }
                         break;
                     case NetworkCommands.AUTHORIZE_GUEST:
-                        Player guestPlayer = new Player() { username = "guest", password = "guestPassword", enabled = true, playerId = 1};
+                        Player guestPlayer = new Player() { username = "guest", password = "guestPassword", enabled = true, playerId = 1 };
                         respMsg = new PlayerRegisterResponse();
 
                         guestPlayer.username = guestPlayer.username.Trim();
                         Player plrExistingg = playersAll.Values.Where(w => w.playerId.Equals(guestPlayer.playerId)).FirstOrDefault();
-                        if (plrExistingg != null)
-                        {
-                            for (int i = 0; i < 20; i++)
-                            {
-                                guestPlayer.playerId++;
+                        
+                        //if (plrExistingg != null)
+                        //{
+                        //    for (int i = 0; i < 20; i++)
+                        //    {
+                        //        guestPlayer.playerId++;
 
-                                Player nplrExistingg = playersAll.Values.Where(w => w.playerId.Equals(guestPlayer.playerId)).FirstOrDefault();
-                                if (nplrExistingg == null)
-                                {
-                                    break;
-                                }
+                        //        Player nplrExistingg = playersAll.Values.Where(w => w.playerId.Equals(guestPlayer.playerId)).FirstOrDefault();
+                        //        if (nplrExistingg == null)
+                        //        {
+                        //            break;
+                        //        }
+                        //    }
+                        //}
+
+                        bool playerExists = false;
+
+                        foreach (var plr in PlayersInGame)
+                        {
+                            if (plr.Value.Name == guestPlayer.username)
+                            {
+                                playerExists = true;
+                                break;
                             }
                         }
 
-                        plrExistingg = playersAll.Values.Where(w => w.username.Equals(guestPlayer.username, StringComparison.InvariantCultureIgnoreCase)).FirstOrDefault();
-
-                        if (plrExistingg != null)
+                        if (playerExists)
                         {
-                            for (int i = 0; i < 200; i++)
+                            for (int i = 0; i < 500; i++)
                             {
                                 guestPlayer.username += "" + i;
 
@@ -152,12 +157,14 @@ namespace Continental.Games
                             }
                         }
 
+                        guestPlayer.playerId = GenerateGuestId();
+
                         PlayersInGame.Add(guestPlayer.playerId, LoadAndPlaceCharacter(guestPlayer, connectionId));
                         response.connectionSuccess = true;
-                            response.responseCommand = guestPlayer;
-                            response.responseContext = NetworkCommands.AUTHORIZE_GUEST_SUCESSFUL;
-                            NotifyPlayerAdded(PlayersInGame[guestPlayer.playerId]);
-                            return response;
+                        response.responseCommand = guestPlayer;
+                        response.responseContext = NetworkCommands.AUTHORIZE_RESPONSE_OK;
+                        NotifyPlayerAdded(PlayersInGame[guestPlayer.playerId]);
+                        return response;
 
                         Console.WriteLine("Guest has logged");
                         return response;
@@ -169,6 +176,38 @@ namespace Continental.Games
             }
             response.connectionSuccess = false;
             return response;
+        }
+
+        /// <summary>
+        /// Generates new playerId for the current guest player.
+        /// </summary>
+        /// <returns></returns>
+        private ulong GenerateGuestId()
+        {
+            for (ulong i = 1500; i <= 2000; i++)
+            {
+                if (!PlayersInGame.ContainsKey((ulong)i))
+                {
+                    return i;
+                }
+            }
+
+            throw new Exception("No more free slots for guests.");
+        }
+
+        private bool CheckForId(Player pl)
+        {
+            bool containsId = false;
+
+            foreach (var plr in PlayersInGame)
+            {
+                if (plr.Value.playerId == pl.playerId)
+                {
+                    return containsId = true;
+                }
+            }
+
+            return false;
         }
 
         /// <summary>
@@ -204,8 +243,8 @@ namespace Continental.Games
                     playersAll.Add(ulong.Parse(row["id"].ToString()), new Player { playerId = ulong.Parse(row["id"].ToString()), username = row["username"].ToString(), password = row["password"].ToString() });
                 }
             }
-            // there should be no more than 2000 registered players in this game
-            if (playersAll.Count > 2000)
+            // there should be no more than 1500 registered players in this game
+            if (playersAll.Count > 1500)
             {
                 throw new Exception("Players limit exceeded!");
             }
@@ -370,28 +409,28 @@ namespace Continental.Games
         private PlayerCharacter LoadAndPlaceCharacter(Player pl, ulong connectionId)
         {
             return new PlayerCharacter
-               {
-                   playerId = pl.playerId,
-                   IsOnline = true,
-                   isInGame = false,
-                   Movement = PlayerCharacter.MovementState.Motionless,
-                   Name = pl.username,
-                   connectionId = connectionId,
-                   Position = new Continental.Games.Vector2
-                   {
-                       X = RandomGenerator.Next(Globals.MIN_X + 2, Globals.MAX_X - 2),
-                       Y = RandomGenerator.Next(Globals.MIN_Y + 2, Globals.MAX_Y - 2)
-                   },
-                   Rotation = PlayerCharacter.RotationState.Motionless,
-                   RotationAngle = RandomGenerator.Next(0, 359),
-                   Color = new Continental.Games.Color
-                    {
-                        A = 255,
-                        R = (byte)RandomGenerator.Next(byte.MinValue, byte.MaxValue),
-                        G = (byte)RandomGenerator.Next(byte.MinValue, byte.MaxValue),
-                        B = (byte)RandomGenerator.Next(byte.MinValue, byte.MaxValue)
-                    }
-               };
+            {
+                playerId = pl.playerId,
+                IsOnline = true,
+                isInGame = false,
+                Movement = PlayerCharacter.MovementState.Motionless,
+                Name = pl.username,
+                connectionId = connectionId,
+                Position = new Continental.Games.Vector2
+                {
+                    X = RandomGenerator.Next(Globals.MIN_X + 2, Globals.MAX_X - 2),
+                    Y = RandomGenerator.Next(Globals.MIN_Y + 2, Globals.MAX_Y - 2)
+                },
+                Rotation = PlayerCharacter.RotationState.Motionless,
+                RotationAngle = RandomGenerator.Next(0, 359),
+                Color = new Continental.Games.Color
+                {
+                    A = 255,
+                    R = (byte)RandomGenerator.Next(byte.MinValue, byte.MaxValue),
+                    G = (byte)RandomGenerator.Next(byte.MinValue, byte.MaxValue),
+                    B = (byte)RandomGenerator.Next(byte.MinValue, byte.MaxValue)
+                }
+            };
         }
     }
 

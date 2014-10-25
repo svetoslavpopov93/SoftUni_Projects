@@ -61,10 +61,10 @@
      <Compile Include="Assets\Shared\PlayerRegisterResponse.cs" />
      <Compile Include="Assets\Shared\Vector2.cs" />
  <Reference Include="Client">
- <HintPath>C:/Users/Svetoslav/Desktop/MyGame_ChatImplementation/Assets/DLLs/Client.dll</HintPath>
+ <HintPath>D:/Coding/SoftUni_Projects/CSharp/MyGame_ChatImplementation/Assets/DLLs/Client.dll</HintPath>
  </Reference>
  <Reference Include="Shared">
- <HintPath>C:/Users/Svetoslav/Desktop/MyGame_ChatImplementation/Assets/DLLs/Shared.dll</HintPath>
+ <HintPath>D:/Coding/SoftUni_Projects/CSharp/MyGame_ChatImplementation/Assets/DLLs/Shared.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -16,18 +16,18 @@ public class Login : MonoBehaviour
 	/// GCC cloud or emulator server IP endpoint
 	/// </summary>
 	public string serverEndpoint = "127.0.0.1:13501";
-	
+
 	/// <summary>
 	/// GCC cloud or emulator server port. Default port of Emulator is 13501
 	/// </summary>
 	//public int serverPort = 13501;//15000
-	
+
 	/// <summary>
 	/// ID of your game in GCC cloud. 
 	/// When running on GCC you will receive gameID upon game registration, for Emulator it is ignored.
 	/// </summary>
 	public string gameID = "abCdEfJKlMN";
-	
+
 	/// <summary>
 	/// Last successfully logged in player. This field is accessible from any Unity script.
 	/// </summary>
@@ -36,12 +36,12 @@ public class Login : MonoBehaviour
 	/// list of username and password pairs. Used to store last logged in players for a single click login.
 	/// </summary>
 	SortedList<string, string> passwords;
-	
+
 	/// <summary>
 	/// When network error occures a user friendly message is stored to this field.
 	/// </summary>
 	public static string lastError = "";
-	public static string username;
+	string username;
 	string password;
 	public static ServerConnection connection;
 	private bool handshakeDone = false;
@@ -60,13 +60,13 @@ public class Login : MonoBehaviour
 			Application.LoadLevel("Login");
 		}
 	}
-	
+
 	void Start()
 	{
 		version = new Version(1,0,0,0);
 		InitPasswords();
 	}
-	
+
 	/// <summary>
 	/// Try to obtain a list of last used username and password pairs. If not found the list is initialized as empty.
 	/// </summary>
@@ -92,8 +92,8 @@ public class Login : MonoBehaviour
 			password = "";
 		}
 	}
-	
-	
+
+
 	/// <summary>
 	/// On successful login if the username is not on the username/password pairs list it is stored in the PlayerPrefs Unity structure.
 	/// </summary>
@@ -115,11 +115,11 @@ public class Login : MonoBehaviour
 			result += "\n";
 			result += pair.Value;
 		}
-		
+
 		PlayerPrefs.SetString("passwords", result);
 		PlayerPrefs.Save();
 	}
-	
+
 	void OnGUI()
 	{
 		GUIStyle errStyle = new GUIStyle();
@@ -138,35 +138,30 @@ public class Login : MonoBehaviour
 		GUI.skin.textField.alignment = TextAnchor.MiddleLeft;
 		GUI.skin.button.normal.textColor = new UnityEngine.Color(.4f, .6f, 1f);
 		GUI.skin.button.hover.textColor = new UnityEngine.Color(.4f, .8f, 1f);
-		
+
 		GUI.Label(new Rect(10, 10, 120, 28), "LOGIN", styleHead);
 		GUI.Label(new Rect(30, 50, 100, 28), "Username");
 		GUI.Label(new Rect(30, 80, 100, 28), "Password");
 		username = GUI.TextField(new Rect(150, 50, 120, 28), username);
 		password = GUI.TextField(new Rect(150, 80, 120, 28), password);
-		
+
 		GUI.Label(new Rect(530, 50, 140, 28), "ServerEndpoint");
 		GUI.Label(new Rect(530, 110, 100, 28), "GameID");
 		serverEndpoint = GUI.TextField(new Rect(650, 50, 120, 28), serverEndpoint);
 		gameID = GUI.TextField(new Rect(650, 110, 120, 28), gameID);
-		
+
 		GUI.Label(new Rect(130, 130, 150, 50), lastError, errStyle);
-		
+
 		if (GUI.Button(new Rect(10, 130, 100, 30), "Login"))
 		{
 			Connect(NetworkCommands.AUTHORIZE_REQUEST);
 		}
-		
+
 		if (GUI.Button(new Rect(10, 180, 100, 30), "Register"))
 		{
 			Connect(NetworkCommands.REGISTER_REQUEST);
 		}
-		
-		if (GUI.Button(new Rect(10, 230, 100, 30), "Login As Guest"))
-		{
-			Connect(NetworkCommands.AUTHORIZE_GUEST);
-		}
-		
+
 		int yPos = 50;
 		
 		foreach (string key in passwords.Keys)
@@ -179,9 +174,8 @@ public class Login : MonoBehaviour
 			}
 			yPos += 30;
 		}
-		
 	}
-	
+
 	/// <summary>
 	/// Clear last error message if any. Close network connection to server if open. Connect to game server and send authorize request.
 	/// </summary>
@@ -198,26 +192,26 @@ public class Login : MonoBehaviour
 			handshakeDone = response.connectionSuccess;
 			switch (response.responseContext)
 			{
-			case NetworkCommands.AUTHORIZE_RESPONSE_OK:
-				myPlayer = (Player)response.responseCommand;
-				if (!passwords.ContainsKey(username))
-                {
-					passwords.Add(username, password);
-					SavePasswords();
-				}
-				Application.LoadLevel("Game");
-				break;
-			case NetworkCommands.AUTHORIZE_RESPONSE_FAIL:
-				lastError = "Login failed!";
-				break;
-			case NetworkCommands.REGISTER_RESPONSE_FAIL:
-				lastError = ((PlayerRegisterResponse)response.responseCommand).result.ToString();
-				break;
-			case CommandCodes.HANDSHAKE_FAILURE:
-				lastError = ((ClosedConnectionInfo)response.responseCommand).reason.ToString();
-				break;
-			default:
-				throw new Exception("Unsupported message code " + response.responseContext.ToString());
+				case NetworkCommands.AUTHORIZE_RESPONSE_OK:
+					myPlayer = (Player)response.responseCommand;
+					if (!passwords.ContainsKey(username))
+					{
+						passwords.Add(username, password);
+						SavePasswords();
+					}
+					Application.LoadLevel("Game");
+					break;
+				case NetworkCommands.AUTHORIZE_RESPONSE_FAIL:
+					lastError = "Login failed!";
+					break;
+				case NetworkCommands.REGISTER_RESPONSE_FAIL:
+					lastError = ((PlayerRegisterResponse)response.responseCommand).result.ToString();
+					break;
+				case CommandCodes.HANDSHAKE_FAILURE:
+					lastError = ((ClosedConnectionInfo)response.responseCommand).reason.ToString();
+					break;
+				default:
+					throw new Exception("Unsupported message code " + response.responseContext.ToString());
 			}
 			if (!handshakeDone)
 			{

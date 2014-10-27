@@ -21,6 +21,8 @@ namespace Continental.Games
 				// upon registration you should receive back only userID
 				case NetworkCommands.REGISTER_RESPONSE_OK:
 				case NetworkCommands.AUTHORIZE_RESPONSE_OK:
+                    bw.Write(username);
+                    bw.Write(password);
 					bw.Write(playerId);
 					break;
 				case NetworkCommands.REGISTER_REQUEST:
@@ -37,7 +39,9 @@ namespace Continental.Games
 			switch (command)
 			{
 				case NetworkCommands.REGISTER_RESPONSE_OK:
-				case NetworkCommands.AUTHORIZE_RESPONSE_OK:
+                case NetworkCommands.AUTHORIZE_RESPONSE_OK:
+                    username = br.ReadString();
+                    password = br.ReadString();
 					playerId = br.ReadUInt64();
 					break;
 				case NetworkCommands.REGISTER_REQUEST:

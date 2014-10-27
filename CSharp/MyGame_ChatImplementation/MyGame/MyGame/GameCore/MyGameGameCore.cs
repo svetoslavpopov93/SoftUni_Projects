@@ -55,7 +55,7 @@ namespace Continental.Games
                                     response.responseCommand = new ClosedConnectionInfo { reason = ClosedConnectionInfo.DisconnectedReason.LoggedFromDifferentLocation };
                                     return response;
                                 }
-                                //PlIG Ket = 22, id = 22
+
                                 PlayersInGame.Add(plr.playerId, LoadAndPlaceCharacter(playersAll[plr.playerId], connectionId));
                                 response.connectionSuccess = true;
                                 response.responseCommand = plr;
@@ -111,26 +111,12 @@ namespace Continental.Games
                         }
                         break;
                     case NetworkCommands.AUTHORIZE_GUEST:
-                        Player guestPlayer = new Player() { username = "guest", password = "guestPassword", enabled = true, playerId = 1 };
+                        Player guestPlayer = new Player() { username = "guest", password = "guestPassword", enabled = false, playerId = 1 };
                         respMsg = new PlayerRegisterResponse();
 
                         guestPlayer.username = guestPlayer.username.Trim();
                         Player plrExistingg = playersAll.Values.Where(w => w.playerId.Equals(guestPlayer.playerId)).FirstOrDefault();
                         
-                        //if (plrExistingg != null)
-                        //{
-                        //    for (int i = 0; i < 20; i++)
-                        //    {
-                        //        guestPlayer.playerId++;
-
-                        //        Player nplrExistingg = playersAll.Values.Where(w => w.playerId.Equals(guestPlayer.playerId)).FirstOrDefault();
-                        //        if (nplrExistingg == null)
-                        //        {
-                        //            break;
-                        //        }
-                        //    }
-                        //}
-
                         bool playerExists = false;
 
                         foreach (var plr in PlayersInGame)
@@ -164,9 +150,6 @@ namespace Continental.Games
                         response.responseCommand = guestPlayer;
                         response.responseContext = NetworkCommands.AUTHORIZE_RESPONSE_OK;
                         NotifyPlayerAdded(PlayersInGame[guestPlayer.playerId]);
-                        return response;
-
-                        Console.WriteLine("Guest has logged");
                         return response;
                 }
             }

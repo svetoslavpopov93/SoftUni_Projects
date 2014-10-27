@@ -130,7 +130,7 @@ namespace Continental.Games
 
                         if (playerExists)
                         {
-                            for (int i = 0; i < 500; i++)
+                            for (int i = 1; i <= 501; i++)
                             {
                                 guestPlayer.username += "" + i;
 
@@ -139,6 +139,10 @@ namespace Continental.Games
                                 if (plrExistingg == null)
                                 {
                                     break;
+                                }
+                                else if (true)
+                                {
+                                    throw new Exception("Maximum symbol count for guest name reached.");
                                 }
                             }
                         }

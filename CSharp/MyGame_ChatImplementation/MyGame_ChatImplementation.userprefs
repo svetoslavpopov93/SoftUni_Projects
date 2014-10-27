@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Login.cs">
     <Files>
-      <File FileName="Assets\Scripts\Login.cs" Line="198" Column="1" />
+      <File FileName="Assets\Scripts\Login.cs" Line="201" Column="1" />
+      <File FileName="d:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\Assets\Shared\PlayerCharacter.cs" Line="57" Column="94" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,0 +1,18 @@
+
+public class Bicycle {
+    int gear;
+    int speed;
+    int cadance;
+    
+    void changeGear(int gearValue){
+        gear = gearValue;
+    }
+    
+    void chanceSpeed(int speedValue){
+        speed = speedValue;
+    }
+    
+    void changeCadance(int cadanceValue){
+        cadance = cadanceValue;
+    }
+}

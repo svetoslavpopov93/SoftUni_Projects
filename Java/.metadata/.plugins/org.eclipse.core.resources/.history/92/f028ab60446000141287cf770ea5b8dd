@@ -1,0 +1,40 @@
+
+public class MountainBicycle extends Bicycle{
+	int altitude;
+	
+	public MountainBicycle(int gear, int speed, int cadance, int altitude) {
+		super(gear, speed, cadance);
+		this.altitude = altitude;
+	}
+	
+	@Override
+	void changeGear(int gearValue) {
+		super.changeGear(gearValue);
+	}
+
+	@Override
+	void chanceSpeed(int speedValue) {
+		super.chanceSpeed(speedValue);
+	}
+
+	@Override
+	void changeCadance(int cadanceValue) {
+		super.changeCadance(cadanceValue);
+	}
+
+	@Override
+	void printStates() {
+		super.printStates();
+	}
+	
+	void printAltitude(int altitudeValue){
+		altitude = altitudeValue;
+	}
+	
+	@Override
+	public String toString() {
+		return "MountainBicycle [altitude=" + altitude + ", gear=" + gear
+				+ ", speed=" + speed + ", cadance=" + cadance + ", Altitude= " + altitude+ "]";
+	}
+
+}

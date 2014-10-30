@@ -1,0 +1,37 @@
+
+public class Bicycle implements IBicycleRide {
+	int gear;
+    int speed;
+    int cadance;
+    
+    public Bicycle(int gear, int speed, int cadance) {
+		super();
+		this.gear = gear;
+		this.speed = speed;
+		this.cadance = cadance;
+	}
+
+	@Override
+	public void changeGear(int gearValue) {
+		
+	}
+
+	@Override
+	public void changeSpeed(int speedValue) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void changeCadance(int cadanceValue) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void rideBicycle() {
+		// TODO Auto-generated method stub
+		
+	}
+    
+}

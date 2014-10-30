@@ -1,0 +1,29 @@
+
+public class Bicycle {
+	int gear;
+    int speed;
+    int cadance;
+    
+    public Bicycle(int gear, int speed, int cadance) {
+		super();
+		this.gear = gear;
+		this.speed = speed;
+		this.cadance = cadance;
+	}
+    
+    void changeGear(int gearValue){
+        gear = gearValue;
+    }
+    
+    void chanceSpeed(int speedValue){
+        speed = speedValue;
+    }
+    
+    void changeCadance(int cadanceValue){
+        cadance = cadanceValue;
+    }
+    
+    void printStates(){
+    	System.out.println("Bicycle [Gear: " + gear + ", Speed: " + speed + ", Cadance: " + cadance + "]");
+    }
+}

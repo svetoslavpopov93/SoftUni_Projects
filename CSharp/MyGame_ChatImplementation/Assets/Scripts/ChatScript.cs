@@ -10,7 +10,7 @@ public class ChatScript : MonoBehaviour
     private string messageToSend = "";
     public static string messBox = "";
     public static string lastMessage = "";
-    string user = Login.myPlayer.username;
+    private string user = Login.myPlayer.username;
     private bool showChat = false;
 
     IEnumerable<CommandPair> commands;

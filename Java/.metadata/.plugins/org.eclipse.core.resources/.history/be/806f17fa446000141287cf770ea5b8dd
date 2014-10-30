@@ -1,0 +1,12 @@
+
+public class InheritanceTest {
+
+	public static void main(String[] args) {
+		Bicycle normalBike = new Bicycle(10, 213, 45);
+		MountainBicycle mountainBike = new MountainBicycle(10, 213, 45, 200);
+
+		normalBike.printStates();
+		System.out.println(mountainBike);
+	}
+
+}

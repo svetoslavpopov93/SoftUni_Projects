@@ -1,0 +1,37 @@
+
+public class MountainBicycle extends Bicycle{
+	int altitude;
+	
+	public MountainBicycle(int gear, int speed, int cadance, int altitude) {
+		super(gear, speed, cadance);
+		this.altitude = altitude;
+	}
+	
+	@Override
+	public void changeGear(int gearValue) {
+		// TODO Auto-generated method stub
+		super.changeGear(gearValue);
+	}
+
+	@Override
+	public void changeSpeed(int speedValue) {
+		// TODO Auto-generated method stub
+		super.changeSpeed(speedValue);
+	}
+
+	@Override
+	public void changeCadance(int cadanceValue) {
+		// TODO Auto-generated method stub
+		super.changeCadance(cadanceValue);
+	}
+
+	@Override
+	public void rideBicycle() {
+		// TODO Auto-generated method stub
+		super.rideBicycle();
+	}
+	
+	public void changeAltitude(int altitudeValue){
+		this.altitude = altitude;
+	}
+}

@@ -85,6 +85,7 @@
     <Compile Include="..\..\Assets\Shared\Player.cs" />
     <Compile Include="..\..\Assets\Shared\PlayerRegisterResponse.cs" />
     <Compile Include="GameCore\GameCore.cs" />
+    <Compile Include="GameCore\MessageFromServer.cs" />
     <Compile Include="GameCore\MyGameGameCore.cs" />
     <Compile Include="..\..\Assets\Shared\NetworkCommands.cs" />
     <Compile Include="GameCore\Message.cs" />

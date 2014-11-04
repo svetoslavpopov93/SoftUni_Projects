@@ -292,8 +292,11 @@ namespace Continental.Games
                     }
                     break;
                 case NetworkCommands.MESSAGE_SEND:
-                    Message curr = (Message)command;
-                    Console.WriteLine(curr.Sender + ": " + curr.Msg);
+                    string sender = GetMessageSender(connectionId);
+                    MessageFromServer curr = new MessageFromServer() { Sender = sender, Msg = ((Message)command).Msg};
+                    command = curr;
+                    //Message curr = (Message)command;
+                    Console.WriteLine(curr.Msg);
                     foreach (var pl in PlayersInGame)
                     {
                         List<ulong> players = new List<ulong>();
@@ -315,6 +318,21 @@ namespace Continental.Games
             }
         }
 
+        private string GetMessageSender(ulong id)
+        {
+            string senderName = "";
+
+            foreach (var plr in PlayersInGame)
+            {
+                if (id == plr.Value.connectionId)
+                {
+                    senderName = plr.Value.Name;
+                    return senderName;
+                }
+            }
+
+            throw new ArgumentException("User with the current id is not found.");
+        }
 
         /// <summary>
         /// Send message to all online players that somebody's got online or offline

@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Login.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Network.cs">
     <Files>
-      <File FileName="Assets\Scripts\Login.cs" Line="201" Column="1" />
-      <File FileName="d:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\Assets\Shared\PlayerCharacter.cs" Line="57" Column="94" />
+      <File FileName="Assets\Scripts\Login.cs" Line="1" Column="1" />
+      <File FileName="d:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\Assets\Shared\PlayerCharacter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Network.cs" Line="101" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -11,7 +12,6 @@
       <Breakpoint file="C:\Users\Svetoslav\Desktop\MyGame_ChatImplementation\Assets\Scripts\Login.cs" line="167" />
       <Breakpoint file="D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\Assets\Scripts\Login.cs" line="222" />
       <Breakpoint file="D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\Assets\Scripts\Login.cs" line="167" />
-      <Breakpoint file="D:\Coding\SoftUni_Projects\CSharp\MyGame_ChatImplementation\Assets\Scripts\Login.cs" line="197" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -55,6 +55,7 @@
      <Compile Include="Assets\Shared\Globals.cs" />
      <Compile Include="Assets\Shared\InitAreaCommand.cs" />
      <Compile Include="Assets\Shared\Message.cs" />
+     <Compile Include="Assets\Shared\MessageFromServer.cs" />
      <Compile Include="Assets\Shared\NetworkCommands.cs" />
      <Compile Include="Assets\Shared\Player.cs" />
      <Compile Include="Assets\Shared\PlayerCharacter.cs" />

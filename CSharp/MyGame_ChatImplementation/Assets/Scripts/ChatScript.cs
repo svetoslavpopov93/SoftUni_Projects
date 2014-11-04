@@ -48,7 +48,7 @@ public class ChatScript : MonoBehaviour
 
         if (GUILayout.Button("Send", GUILayout.Width(75)))
         {
-            Login.connection.Send(NetworkCommands.MESSAGE_SEND, new Message() { Sender = user, Msg = messageToSend });
+            Login.connection.Send(NetworkCommands.MESSAGE_SEND, new Message() { Msg = messageToSend });
             messageToSend = "";
         }
 

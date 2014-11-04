@@ -98,7 +98,8 @@ public class Network : MonoBehaviour
                     Login.connection.Disconnect(false);
                     break;
                 case NetworkCommands.MESSAGE_RECIEVE:
-                    string current = ((Message)pair.Data).ToString();
+                    string current = ((MessageFromServer)pair.Data).ToString();   
+                //string current = ((Message)pair.Data).ToString();
                     if (current != ChatScript.lastMessage)
                     {
                         ChatScript.messBox += current;

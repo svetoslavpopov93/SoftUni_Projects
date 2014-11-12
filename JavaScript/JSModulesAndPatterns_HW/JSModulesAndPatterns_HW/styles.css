@@ -1,0 +1,46 @@
+﻿body {
+    width: 50%;
+    margin: auto;
+    border: 2px solid black;
+}
+
+    body #wrapper {
+        min-height: 200px;
+    }
+
+        body #wrapper .container {
+            min-height: 197px;
+            margin: 5px;
+            border: 2px solid gray;
+
+        }
+        
+ul {
+    list-style-type: none;
+}
+
+    ul input {
+        float: left;
+    }
+
+input {
+    float: right;
+}
+
+.prime {
+    float:none;
+    margin-left: 10px;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+h2 {
+    float: right;
+}
+
+p {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top:2px;
+    margin-bottom: 2px;
+}

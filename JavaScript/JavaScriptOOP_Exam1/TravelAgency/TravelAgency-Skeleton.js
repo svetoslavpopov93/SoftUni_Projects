@@ -5,7 +5,23 @@ function processTravelAgencyCommands(commands) {
         this.prototype.constructor = this;
     }
 
-    var Validate
+    var Validation = (function(){
+        function CheckForEmptyString(str){
+                if(str === ""){
+                        throw new Error("Input string can not be empty.");
+                    }
+            };
+            
+            function CheckForNegativeNumber(num){
+                if(parseFloat(num) < 0){
+                    throw new Error("Number must be greater than zero!");
+                    }
+                };    
+        return {
+            CheckForEmptyString:CheckForEmptyString,
+            CheckForNegativeNumber:CheckForNegativeNumber
+            };
+        }());
     
     var Models = (function() {
 
@@ -58,16 +74,51 @@ function processTravelAgencyCommands(commands) {
 
             }
             
-            Travel.prototype.setEndDate = function(endDate){this._endDate = endDate;};
-            Travel.prototype.getEndDate = function(){return this._endDate;};
-            Travel.prototype.setName = function(name){this._name = name;};
+            Travel.prototype.setEndDate = function(endDate){
+                if(endDate.constructor !== Date){
+                        throw new Error("End date must be real Date object.");
+                    }
+                    this._endDate = endDate;};
+            Travel.prototype.getEndDate = function(){
+                return this._endDate;};
+            Travel.prototype.setName = function(name){
+                Validation.CheckForEmptyString(name);
+                this._name = name;};
             Travel.prototype.getName = function(){return this._name;};
-            Travel.prototype.setPrice = function(price){this._price = price;};
-            Travel.prototype.getPrice = function(){return this._price;};
-            Travel.prototype.setStartDate = function(startDate){this._startDate = startDate;};
+            Travel.prototype.setPrice = function(price){
+                if(isNaN(price)){
+                    throw new Error("Price can not be undefined!");
+                    }
+            Validation.CheckForNegativeNumber(price);
+            var str = price.toFixed(2);
+            this._price = str;};
+            Travel.prototype.getPrice = function(){
+                return this._price;};
+            Travel.prototype.setStartDate = function(startDate){
+                if(startDate.constructor !== Date){
+                        throw new Error("Start date must be real Date object.");
+                    }
+                this._startDate = startDate;};
             Travel.prototype.getStartDate = function(){return this._startDate;};
+            Travel.prototype.getCurrentStartDate = function(){
+                var day = this.getStartDate().getDate();
+                var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                var month = months[parseInt(this.getStartDate().getMonth())];
+                var year = this.getStartDate().getFullYear();
+
+                return day + "-" + month + "-" + year;
+                };
+                
+            Travel.prototype.getCurrentEndDate = function(){
+                var day = this.getEndDate().getDate();
+                var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                var month = months[parseInt(this.getEndDate().getMonth())];
+                var year = this.getEndDate().getFullYear();
+
+                return day + "-" + month + "-" + year;
+                };
             Travel.prototype.toString = function(){
-            return "* " + this.constructor.name + ": name=" + this.getName() + ",start-date=" + this.getStartDate() + ",end-date=" + this.getEndDate() + ",price=" + this.getPrice();
+            return " * " + this.constructor.name + ": name=" + this.getName() + ",start-date=" + this.getCurrentStartDate() + ",end-date=" + this.getCurrentEndDate() + ",price=" + this.getPrice();
                 };
             return Travel;
         }());
@@ -84,7 +135,7 @@ function processTravelAgencyCommands(commands) {
             Excursion.prototype.getDestinations = function () { 
                 var str = "";
                 for(var i = 0; i < this._destinations.length; i++){
-                        str += this._destinations[i].toString();
+                        str += this._destinations[i].toString() + (i < (this._destinations.length - 1) ? ";" : "");
                     }
 
                 return str;
@@ -97,12 +148,15 @@ function processTravelAgencyCommands(commands) {
                             }
                     }
                 };
-            Excursion.prototype.setTransport = function(tr){this._transport = tr;};
+            Excursion.prototype.setTransport = function(tr){
+                Validation.CheckForEmptyString(tr);
+                this._transport = tr;};
             Excursion.prototype.getTransport = function(){return this._transport;};
                 Excursion.prototype.toString = function(){
                     var tr = this._transport;
-                    var dest = this._name;
-                    return Travel.prototype.toString.call(this) + ",transport=" + this.getTransport();
+                    var dest = (this.getDestinations() !== "" ? this.getDestinations() : "-");
+                    return Travel.prototype.toString.call(this) + ",transport=" + this.getTransport() + "\n ** Destinations: "
+                + dest;
                     };
 
                 return Excursion;
@@ -118,14 +172,23 @@ function processTravelAgencyCommands(commands) {
                 }
 
             Vacation.extends(Travel);
-            Vacation.prototype.setAccommodation = function(accommodation){this._accommodation = accommodation;};
+            Vacation.prototype.setAccommodation = function(accommodation){
+                if(accommodation !== undefined){
+                        Validation.CheckForEmptyString(accommodation);
+                    }
+                this._accommodation = accommodation;};
             Vacation.prototype.getAccommodation = function(){return this._accommodation;};
-            Vacation.prototype.setLocation = function(location){this._location = location;};
+            Vacation.prototype.setLocation = function(location){
+                if(location === undefined){
+                    throw new Error("Location can not be undefined!");
+                    }
+                Validation.CheckForEmptyString(location);
+                this._location = location;};
             Vacation.prototype.getLocation = function(){return this._location;};
             Vacation.prototype.toString = function(){
                 return Travel.prototype.toString.call(this) +
                 ",location=" + this.getLocation() +
-                (this.getAccommodation() ? ",accommodation=" + this.getAccommodation() : "");;
+                (this.getAccommodation() ? ",accommodation=" + this.getAccommodation() : "");
             };
 
             return Vacation;
@@ -138,7 +201,11 @@ function processTravelAgencyCommands(commands) {
                 };
 
             Cruise.extends(Excursion);
-            Cruise.prototype.setStartDock = function(startDock){this._startDock = startDock;};
+            Cruise.prototype.setStartDock = function(startDock){
+                if(startDock !== undefined){
+                Validation.CheckForEmptyString(startDock);
+                }
+                this._startDock = startDock;};
             Cruise.prototype.getStartDock = function(){return this._startDock;};
             Cruise.prototype.toString = function(){
                 return Excursion.prototype.toString.call(this) + 

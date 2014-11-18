@@ -1,0 +1,10 @@
+{
+  "name": "TravelAgency",
+  "version": "0.0.0",
+  "description": "TravelAgency",
+  "main": "app.js",
+  "author": {
+    "name": "Svetoslav",
+    "email": ""
+  }
+}

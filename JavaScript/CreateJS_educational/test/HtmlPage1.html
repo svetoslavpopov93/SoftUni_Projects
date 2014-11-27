@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>EaselJS : Playing with rotating sprites</title>
+
+<link href="assets/demoStyles.css" rel="stylesheet" type="text/css" />
+<script src="http://code.createjs.com/easeljs-0.4.2.min.js"></script>
+
+<script>
+
+    var canvas;
+    var stage;
+    var background;
+    var container;
+    var mouseTarget;	// the display object currently under the mouse, or being dragged
+    var dragStarted;	// indicates whether we are currently in a drag operation
+    var offset = new Point();
+    var update = true;
+    var _displayObject;
+    var objectArray;
+    function init() {
+        if (window.top != window) {
+            document.getElementById("header").style.display = "none";
+        }
+        document.getElementById("loader").className = "loader";
+        // create stage and point it to the canvas:
+        canvas = document.getElementById("testCanvas");
+
+        //check to see if we are running in a browser with touch support
+        stage = new Stage(canvas);
+
+        // enable touch interactions if supported on the current device:
+        Touch.enable(stage);
+
+        // enabled mouse over / out events
+        stage.enableMouseOver(10);
+
+        background = new Container();
+        container = new Container();
+
+        stage.addChild(background);
+        stage.addChild(container);
+        // load the source image:
+
+        objectArray = [];
+
+
+        // load the source image:
+        var backg = new Image();
+        backg.src = "assets/mainBack.png";
+        backg.onload = handleBackLoad;
+
+        var backg = new Image();
+        backg.src = "assets/monsterSheet.png";
+        backg.onload = handleSpriteSheetLoad;
+
+        document.getElementById("loader").className = "";
+        Ticker.addListener(window);
+
+        Ticker.setFPS(30);
+    }
+    function handleSpriteSheetLoad(event) {
+
+
+        var ss = new SpriteSheet({
+            "frames": {
+                "width": 100,
+                "numFrames": 9,
+                "regX": 50,
+                "regY": 50,
+                "height": 100
+            },
+            "animations": { "run": [0, 8] },
+            "images": ["assets/monsterSheet.png"]
+        });
+
+
+        for (var i = 0; i < 200; i++) {
+
+
+
+            var _displayObject = new BitmapAnimation(ss);
+            _displayObject.x = canvas.width * Math.random() | 0;
+            _displayObject.y = canvas.height * Math.random() | 0;
+            _displayObject.rotation = 360 * Math.random() | 0;
+
+            ss.getAnimation("run").frequency = 1;
+            ss.getAnimation("run").next = "run";
+            _displayObject.gotoAndPlay("run");
+            _displayObject.name = "obj_" + i;
+            var randomMonster = Math.floor(Math.random() * 9)
+            _displayObject.gotoAndStop(randomMonster);
+            stage.addChild(_displayObject);
+
+            // wrapper function to provide scope for the event handlers:
+            (function (target) {
+
+            })(_displayObject);
+
+            objectArray.push(_displayObject)
+        }
+
+    }
+
+    function stop() {
+        Ticker.removeListener(window);
+    }
+    function handleBackLoad(event) {
+        var image = event.target;
+
+
+        var bitmap = new Bitmap(image);
+
+        background.addChild(bitmap);
+        bitmap.name = "background" + i;
+
+
+    }
+
+    function tick() {
+        // this set makes it so the stage only re-renders when an event handler indicates a change has happened.
+
+        var amountOfItems = objectArray.length;
+        for (var i = 0; i < amountOfItems; i++) {
+            bitmap = objectArray[i];
+            bitmap.x += 5;
+            bitmap.rotation += 2;
+            if (bitmap.x > 1000) {
+                bitmap.x = -40;
+            }
+        }
+
+
+        stage.update();
+    }
+
+
+
+
+</script>
+</head>
+
+<body onload="init();">
+
+<div id="loader"></div>
+
+	<header id="header" class="EaselJS">
+	    <h1><span class="text-product">Playing with Easel<strong>JS</strong></span> Playing with rotating sprites</h1>
+	    <p>&nbsp;</p>
+	</header>
+
+	<div class="canvasHolder">
+	  <canvas id="testCanvas" width="960" height="400"></canvas>
+	</div>
+</body>
+</html>

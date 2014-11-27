@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateJS_educational", "CreateJS_educational.csproj", "{29FABD34-A06D-45D6-9488-AFEA13A386FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SniperGame", "..\SniperGame\SniperGame.csproj", "{8C4CB7AD-FCCB-48D0-8A80-FE1D03F6E6C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{B6EAE8F2-2A17-4169-8234-7D7895D6BCC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29FABD34-A06D-45D6-9488-AFEA13A386FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29FABD34-A06D-45D6-9488-AFEA13A386FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29FABD34-A06D-45D6-9488-AFEA13A386FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29FABD34-A06D-45D6-9488-AFEA13A386FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4CB7AD-FCCB-48D0-8A80-FE1D03F6E6C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4CB7AD-FCCB-48D0-8A80-FE1D03F6E6C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4CB7AD-FCCB-48D0-8A80-FE1D03F6E6C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4CB7AD-FCCB-48D0-8A80-FE1D03F6E6C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6EAE8F2-2A17-4169-8234-7D7895D6BCC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6EAE8F2-2A17-4169-8234-7D7895D6BCC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6EAE8F2-2A17-4169-8234-7D7895D6BCC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6EAE8F2-2A17-4169-8234-7D7895D6BCC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

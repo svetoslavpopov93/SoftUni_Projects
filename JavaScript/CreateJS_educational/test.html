@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>event.which demo</title>
+    <script src="scripts/createjs.js"></script>
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+    <script src="scripts/jquery_animate.js"></script>
+    <script src="scripts/testmain.js"></script>
+    <style>
+        #canvas {
+            background-color: yellow;
+            width: 500px;
+            height: 500px;
+        }
+        .sniper{
+            height: 63px;
+            width: 53px;
+            background-image: url(assets/sniper.png);
+            margin-left: 450px;
+            margin-top: 450px;
+        }
+    </style>
+</head>
+<body onload="core.init()">
+ 
+    <!--<div id="sniper">
+    </div>-->
+    <canvas id="canvas" width="500", height="500">
+        alt text
+    </canvas>
+    <input type="button" id="btn" value="left"/>
+    <input type="button" id="rotate" value="right"/>
+ <script>
+         isClicked = true;
+ </script>
+</body>
+</html>

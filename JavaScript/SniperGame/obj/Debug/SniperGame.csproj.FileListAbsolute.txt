@@ -1,0 +1,5 @@
+D:\Coding\SoftUni_Projects\JavaScript\SniperGame\bin\SniperGame.dll
+D:\Coding\SoftUni_Projects\JavaScript\SniperGame\bin\SniperGame.pdb
+D:\Coding\SoftUni_Projects\JavaScript\SniperGame\obj\Debug\SniperGame.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni_Projects\JavaScript\SniperGame\obj\Debug\SniperGame.dll
+D:\Coding\SoftUni_Projects\JavaScript\SniperGame\obj\Debug\SniperGame.pdb

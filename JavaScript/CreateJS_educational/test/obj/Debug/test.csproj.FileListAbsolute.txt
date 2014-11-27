@@ -1,0 +1,5 @@
+D:\Coding\SoftUni_Projects\JavaScript\CreateJS_educational\test\bin\test.dll
+D:\Coding\SoftUni_Projects\JavaScript\CreateJS_educational\test\bin\test.pdb
+D:\Coding\SoftUni_Projects\JavaScript\CreateJS_educational\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni_Projects\JavaScript\CreateJS_educational\test\obj\Debug\test.dll
+D:\Coding\SoftUni_Projects\JavaScript\CreateJS_educational\test\obj\Debug\test.pdb

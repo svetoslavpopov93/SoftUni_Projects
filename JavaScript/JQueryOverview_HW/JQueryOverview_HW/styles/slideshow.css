@@ -1,0 +1,34 @@
+﻿body {
+    background-color: #2D2C2E;
+}
+
+input {
+    position: fixed;
+    top: 615px;
+    background: #888789;
+    border: none;
+    border-radius: 3px;
+}
+
+    #left {
+        left: 620px;
+    }
+
+    #right {
+        left: 650px;
+    }
+
+img {
+    width: 300px;
+    margin-top: 210px;
+    display: none;
+}
+
+.big_image {
+    display: block;
+    margin-top: 30px;
+    width: 700px;
+    position: fixed;
+    left: 295px;
+    border-radius: 5px;
+}

@@ -1,0 +1,10 @@
+C:\Users\Svetoslav\Desktop\JQueryOverview_HW\JQueryOverview_HW\bin\JQueryOverview_HW.dll
+C:\Users\Svetoslav\Desktop\JQueryOverview_HW\JQueryOverview_HW\bin\JQueryOverview_HW.pdb
+C:\Users\Svetoslav\Desktop\JQueryOverview_HW\JQueryOverview_HW\obj\Debug\JQueryOverview_HW.csprojResolveAssemblyReference.cache
+C:\Users\Svetoslav\Desktop\JQueryOverview_HW\JQueryOverview_HW\obj\Debug\JQueryOverview_HW.dll
+C:\Users\Svetoslav\Desktop\JQueryOverview_HW\JQueryOverview_HW\obj\Debug\JQueryOverview_HW.pdb
+D:\Coding\SoftUni_Projects\JavaScript\JQueryOverview_HW\JQueryOverview_HW\bin\JQueryOverview_HW.dll
+D:\Coding\SoftUni_Projects\JavaScript\JQueryOverview_HW\JQueryOverview_HW\bin\JQueryOverview_HW.pdb
+D:\Coding\SoftUni_Projects\JavaScript\JQueryOverview_HW\JQueryOverview_HW\obj\Debug\JQueryOverview_HW.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni_Projects\JavaScript\JQueryOverview_HW\JQueryOverview_HW\obj\Debug\JQueryOverview_HW.dll
+D:\Coding\SoftUni_Projects\JavaScript\JQueryOverview_HW\JQueryOverview_HW\obj\Debug\JQueryOverview_HW.pdb

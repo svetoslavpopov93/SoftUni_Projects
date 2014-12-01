@@ -1,0 +1,21 @@
+﻿table {
+margin: 0;
+padding: 0;
+border: 1px solid black;
+border-collapse: collapse;
+display: none;
+}
+
+    table tr th, td {
+        border: 1px solid black;
+        padding: 3px;
+    }
+
+table tr th {
+    background-color: green;
+}
+
+input {
+    display: block;
+    margin-bottom: 30px;
+}

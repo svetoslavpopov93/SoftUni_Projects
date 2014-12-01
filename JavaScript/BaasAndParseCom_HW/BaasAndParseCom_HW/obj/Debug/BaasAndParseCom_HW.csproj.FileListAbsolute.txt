@@ -1,0 +1,5 @@
+D:\Coding\SoftUni_Projects\JavaScript\BaasAndParseCom_HW\BaasAndParseCom_HW\bin\BaasAndParseCom_HW.dll
+D:\Coding\SoftUni_Projects\JavaScript\BaasAndParseCom_HW\BaasAndParseCom_HW\bin\BaasAndParseCom_HW.pdb
+D:\Coding\SoftUni_Projects\JavaScript\BaasAndParseCom_HW\BaasAndParseCom_HW\obj\Debug\BaasAndParseCom_HW.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni_Projects\JavaScript\BaasAndParseCom_HW\BaasAndParseCom_HW\obj\Debug\BaasAndParseCom_HW.dll
+D:\Coding\SoftUni_Projects\JavaScript\BaasAndParseCom_HW\BaasAndParseCom_HW\obj\Debug\BaasAndParseCom_HW.pdb

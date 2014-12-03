@@ -61,6 +61,7 @@
     <Content Include="scripts\jquery.js" />
     <Content Include="scripts\jqueryNotifyPlugin.js" />
     <Content Include="scripts\main_script.js" />
+    <Content Include="scripts\test.js" />
     <Content Include="styles\main_style.css" />
     <Content Include="test.html" />
     <Content Include="Web.config" />

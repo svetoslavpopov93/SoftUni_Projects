@@ -1,41 +1,31 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+
 <head>
-    <title>Countries</title>
-    <link href="styles/main_style.css" rel="stylesheet" />
+    <title>Simple countries system</title>
+    <link href="styles/main.css" rel="stylesheet" />
 </head>
 <body>
-    <article>
-        <section>
-            <h3>Add country field:</h3>
-            <label for="add_country_name">Country name</label>
-            <input type="text" id="add_country_name" />
-            <label for="add_country_population">Country population</label>
-            <input type="text" id="add_country_population" />
-            <input type="button" id="add_btn" value="Add country" />
-        </section>
-        <section>
-            <h3>Edit country name:</h3>
-            <label for="edit_current_name">Current name:</label>
-            <input type="text" id="edit_current_name" />
-            <label for="edit_new_name">New name:</label>
-            <input type="text" id="edit_new_name" />
-            <input type="button" id="edit_name_btn" value="Edit name"/>
-
-            <h3>Edit country population:</h3>
-            <label for="edit_current_population">Current population:</label>
-            <input type="text" id="edit_current_population" />
-            <label for="edit_new_population">New population:</label>
-            <input type="text" id="edit_new_population" />
-            <input type="button" id="edit_population_btn" value="Edit population"/>    
-        </section>
-    </article>
     <aside>
-        <span id="print_countries">Print countries</span>
-        <ul id="countries"></ul>
+        <div>
+            <label for="tb_name">Name:</label>
+            <input type="text" id="tb_name" />
+            <label for="tb_population">Population:</label>
+            <input type="text" id="tb_population" />
+            <a href="#" id="btn_add">Add country</a>
+        </div>
     </aside>
+    <article>
+        <div>
+            <a href="#" id="btn_showCountries">Load Countries</a>
+        </div>
+        <ul id="countries">
+        </ul>
+    </article>
     <script src="scripts/jquery.js"></script>
     <script src="scripts/jqueryNotifyPlugin.js"></script>
-    <script src="scripts/main_script.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>

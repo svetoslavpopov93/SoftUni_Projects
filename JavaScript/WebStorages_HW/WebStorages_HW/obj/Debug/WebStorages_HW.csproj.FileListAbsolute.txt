@@ -1,0 +1,5 @@
+D:\Coding\SoftUni_Projects\JavaScript\WebStorages_HW\WebStorages_HW\bin\WebStorages_HW.dll
+D:\Coding\SoftUni_Projects\JavaScript\WebStorages_HW\WebStorages_HW\bin\WebStorages_HW.pdb
+D:\Coding\SoftUni_Projects\JavaScript\WebStorages_HW\WebStorages_HW\obj\Debug\WebStorages_HW.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni_Projects\JavaScript\WebStorages_HW\WebStorages_HW\obj\Debug\WebStorages_HW.dll
+D:\Coding\SoftUni_Projects\JavaScript\WebStorages_HW\WebStorages_HW\obj\Debug\WebStorages_HW.pdb

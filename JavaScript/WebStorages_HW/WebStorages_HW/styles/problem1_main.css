@@ -1,0 +1,45 @@
+﻿body {
+}
+
+#btn_clear {
+    display: none;
+}
+
+a {
+    background-color:#376E7E;
+    display: inline-block;
+    padding: 2px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+
+    a:hover {
+        background-color: #367884;
+    }
+
+#greetings_box {
+    display: inline-block;
+    position: absolute;
+    text-wrap: initial;
+    background-color: #488F95;
+    text-align: center;
+    vertical-align: central;
+    color: white;
+    padding-top: 110px;
+    font-size: 1.3em;
+}
+
+div {
+    width: 365px;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.moveRight {
+width: 265px;
+}

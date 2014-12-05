@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8B38CC30-8E3A-470D-9B7B-4FBBD598C5A1}</ProjectGuid>
+    <ProjectGuid>{35C3E01C-E324-4375-87C7-A4B5594E1348}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BaasAndParseCom_HW</RootNamespace>
-    <AssemblyName>BaasAndParseCom_HW</AssemblyName>
+    <RootNamespace>WebStorages_HW</RootNamespace>
+    <AssemblyName>WebStorages_HW</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,13 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="test.html" />
+    <Content Include="problem1_greetingSystem.html" />
     <Content Include="scripts\jquery.js" />
-    <Content Include="scripts\jqueryNotifyPlugin.js" />
-    <Content Include="scripts\test.js" />
-    <Content Include="scripts\main.js" />
-    <Content Include="styles\main.css" />
-    <Content Include="index.html" />
+    <Content Include="scripts\problem1_main.js" />
+    <Content Include="styles\problem1_main.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +74,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -92,7 +90,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:47114/</IISUrl>
+          <IISUrl>http://localhost:41933/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
